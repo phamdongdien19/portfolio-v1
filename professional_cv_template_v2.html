@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Version 2 - Phạm Đông Điền</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --header-color: #a3322d;
+            /* Reddish color from sample */
+            --text-main: #1f2937;
+            --text-light: #4b5563;
+            --border-color: #d1d5db;
+            --bg-body: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.5;
+            color: var(--text-main);
+            background-color: #f9fafb;
+            padding: 50px 0;
+        }
+
+        .cv-container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: white;
+            padding: 60px 50px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Header Section */
+        header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .name {
+            font-family: 'Crimson Pro', serif;
+            font-size: 42px;
+            font-weight: 700;
+            color: #000;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .contact-info {
+            font-size: 13px;
+            color: var(--text-light);
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .contact-info span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        /* Section Styling */
+        section {
+            margin-bottom: 20px;
+        }
+
+        h2.section-title {
+            font-family: 'Crimson Pro', serif;
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--header-color);
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 10px;
+            padding-bottom: 2px;
+        }
+
+        .objective {
+            font-size: 14px;
+            text-align: justify;
+        }
+
+        /* Experience & Project Styling */
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+
+        .item-title {
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .item-date {
+            font-size: 13px;
+            color: var(--text-light);
+            font-weight: 600;
+        }
+
+        .item-subtitle {
+            font-size: 14px;
+            font-style: italic;
+            color: var(--text-light);
+            margin-bottom: 5px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 15px;
+        }
+
+        li {
+            font-size: 13.5px;
+            position: relative;
+            margin-bottom: 4px;
+            padding-left: 15px;
+        }
+
+        li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #000;
+        }
+
+        .strong {
+            font-weight: 600;
+        }
+
+        /* Skills Grid */
+        .skills-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 8px;
+        }
+
+        .skill-item {
+            font-size: 13.5px;
+        }
+
+        .skill-item b {
+            font-weight: 600;
+        }
+
+        /* Education & Certificates Header fix */
+        .edu-item {
+            margin-bottom: 10px;
+        }
+
+        @media print {
+            body {
+                padding: 0;
+                background: white;
+            }
+
+            .cv-container {
+                box-shadow: none;
+                max-width: 100%;
+                width: 100%;
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cv-container">
+        <header>
+            <h1 class="name">PHẠM ĐÔNG ĐIỀN</h1>
+            <div class="contact-info">
+                <span>📞 0942637519</span>
+                <span>📧 phamdongdien19@gmail.com</span>
+                <span>📍 TP. Hồ Chí Minh</span>
+                <span>🔗 linkedin.com/in/dienpham-mr</span>
+            </div>
+        </header>
+
+        <section>
+            <h2 class="section-title">Objective</h2>
+            <p class="objective">
+                Chuyên gia Fieldwork online trong lĩnh vực nghiên cứu thị trường với 5 năm kinh nghiệm tại IFM Research.
+                Có thế mạnh kết nối giữa vận hành thu thập dữ liệu định lượng trực tuyến và giải pháp công nghệ nhằm tối
+                ưu chi phí dự án (giảm 10–30% CPI) trong khi vẫn duy trì tiêu chuẩn chất lượng dữ liệu nghiêm ngặt. Với
+                nền tảng 2 năm phát triển Frontend, có khả năng chủ động xây dựng và ứng dụng FW tools dựa trên AI để
+                nâng cao hiệu suất, tự động hóa quy trình và tăng cường kiểm soát chất lượng.
+            </p>
+        </section>
+
+        <section>
+            <h2 class="section-title">Work Experience</h2>
+            <div class="item-header">
+                <span class="item-title">IFM Research Company</span>
+                <span class="item-date">2019 – Present</span>
+            </div>
+            <div class="item-subtitle">
+                <span>Data Collection Operations Specialist & IT Support</span>
+                <span>Full-time</span>
+            </div>
+            <ul>
+                <li>Quản lý xuyên suốt quy trình mẫu, tổ chức launch khảo sát và đảm bảo tính toàn vẹn dữ liệu thông qua
+                    QC đáp viên chặt chẽ.</li>
+                <li><span class="strong">Giảm 10–30% chi phí vận hành</span> bằng cách triển khai bidding vendor có
+                    chiến lược và điều phối nguồn mẫu linh hoạt, phù hợp từng yêu cầu nghiên cứu.</li>
+                <li>Tìm kiếm, thiết lập technical và duy trì quan hệ với mạng lưới đối tác FW mới trên toàn cầu.</li>
+                <li>Xây dựng Web App & FW Tools bằng <span class="strong">AI và Frontend (React/Vue/JS)</span> giúp tự
+                    động hóa 60% tác vụ lặp lại, tăng tốc độ triển khai dự án.</li>
+                <li>Đảm nhận vai trò IT Support: Quản lý thiết bị hạ tầng, khắc phục sự cố phần cứng/phần mềm Windows
+                    cho toàn bộ đội ngũ.</li>
+                <li>Phối hợp cùng team DP & QC xử lý dữ liệu thô, đảm bảo tính logic và độ sạch của dữ liệu trước khi
+                    bàn giao khách hàng.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skill-item"><b>Fieldwork Management:</b> Sample Management, CPI Bidding, Vendor Relations,
+                    Project Financials (Direct Cost).</div>
+                <div class="skill-item"><b>Technology:</b> Frontend Development (HTML/CSS, JS, React/Vite), AI-driven
+                    Automation, Git.</div>
+                <div class="skill-item"><b>IT & Operations:</b> System Administration, Hardware/Software
+                    Troubleshooting, Windows OS Support.</div>
+                <div class="skill-item"><b>Tools:</b> FW Custom Tools, Microsoft Excel (Advanced), Market Research
+                    Platforms.</div>
+                <div class="skill-item"><b>Languages:</b> Vietnamese (Native), English (Basic Communication & Email
+                    Writing).</div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Corporate Projects</h2>
+            <div class="item-header">
+                <span class="item-title">Flexible Sample Management Project</span>
+                <span class="item-date">Completed</span>
+            </div>
+            <ul>
+                <li>Phân bổ nguồn mẫu linh hoạt giúp <span class="strong">giảm 20% CPI</span> cho dự án quy mô lớn 1.200
+                    completes.</li>
+                <li>Đảm bảo tính đại diện và kiểm soát chất lượng QC nghiêm ngặt xuyên suốt quá trình thu thập.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 class="section-title">Personal Projects</h2>
+            <div class="item-header">
+                <span class="item-title">FW Automation & Tracking Tool</span>
+                <span class="item-date">2024 - Present</span>
+            </div>
+            <div class="item-subtitle">
+                <span>React, AI Integration, Real-time Dashboard</span>
+            </div>
+            <ul>
+                <li>Tự xây dựng ứng dụng web quản lý Incentive và theo dõi tiến độ dự án (Project Tracking) thời gian
+                    thực.</li>
+                <li>Tích hợp AI để tự động hóa các báo cáo thủ công, giảm 80% thời gian xử lý dữ liệu định kỳ.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 class="section-title">Education</h2>
+            <div class="item-header">
+                <span class="item-title">Hutech University of Technology</span>
+                <span class="item-date">20xx - 20xx</span>
+            </div>
+            <div class="item-subtitle">
+                <span>Chuyên ngành: Công nghệ thông tin (CNTT)</span>
+            </div>
+            <ul>
+                <li>Nền tảng kiến thức về hệ thống máy tính và phát triển phần mềm ứng dụng.</li>
+            </ul>
+        </section>
+    </div>
+</body>
+
+</html>
