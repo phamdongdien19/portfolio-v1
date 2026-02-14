@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phạm Đông Điền | Personal Portfolio</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700&family=Inter:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --primary: #a3322d;
+            --primary-dark: #7a2522;
+            --bg-dark: #111827;
+            --bg-light: #f9fafb;
+            --text-main: #1f2937;
+            --text-muted: #4b5563;
+            --border: #e5e7eb;
+            --white: #ffffff;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-main);
+            background-color: var(--bg-light);
+            line-height: 1.6;
+        }
+
+        h1,
+        h2,
+        h3,
+        .serif {
+            font-family: 'Crimson Pro', serif;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            border-bottom: 1px solid var(--border);
+            padding: 1rem 0;
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+            letter-spacing: -0.5px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-main);
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(rgba(17, 24, 39, 0.7), rgba(17, 24, 39, 0.7)), url('https://images.unsplash.com/photo-1551288049-bbda3865c170?auto=format&fit=crop&q=80&w=2000');
+            background-size: cover;
+            background-position: center;
+            color: var(--white);
+            padding: 0 2rem;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-bottom: 2rem;
+            color: #d1d5db;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background-color: var(--primary);
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 4px;
+            transition: var(--transition);
+        }
+
+        .cta-button:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Stats Section */
+        .stats {
+            padding: 5rem 2rem;
+            background: var(--white);
+        }
+
+        .stats-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 3rem;
+            text-align: center;
+        }
+
+        .stat-item h3 {
+            font-size: 3.5rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-item p {
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+
+        /* Section Global */
+        .section {
+            padding: 8rem 2rem;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            color: var(--bg-dark);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+        .section-header .line {
+            width: 60px;
+            height: 3px;
+            background-color: var(--primary);
+            margin: 0 auto;
+        }
+
+        /* Projects Section */
+        .projects-grid {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .project-card {
+            background: var(--white);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            transition: var(--transition);
+            border: 1px solid var(--border);
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-img {
+            height: 200px;
+            background: #eee;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-img i {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3rem;
+            color: #ccc;
+        }
+
+        .project-content {
+            padding: 2rem;
+        }
+
+        .project-tag {
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .project-content h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .project-content p {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+        }
+
+        .project-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .meta-tag {
+            background: #f3f4f6;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        /* Clients Section */
+        .clients {
+            background: var(--bg-dark);
+            color: var(--white);
+        }
+
+        .clients-grid {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 2rem;
+            align-items: center;
+            justify-items: center;
+            opacity: 0.8;
+        }
+
+        .client-logo {
+            font-weight: 700;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        /* Experience Section (Timeline style) */
+        .timeline {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 2px;
+            background: var(--border);
+        }
+
+        .timeline-item {
+            padding-left: 2rem;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            left: -5px;
+            top: 0;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--primary);
+        }
+
+        .timeline-date {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        /* Footer */
+        footer {
+            background: #000;
+            color: #9ca3af;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-links a {
+            color: var(--white);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--primary);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo">ĐÔNG ĐIỀN</a>
+            <ul class="nav-links">
+                <li><a href="#about">Về tôi</a></li>
+                <li><a href="#experience">Kinh nghiệm</a></li>
+                <li><a href="#projects">Dự án</a></li>
+                <li><a href="#clients">Khách hàng</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Phạm Đông Điền</h1>
+            <p>Data Collection Operations Specialist – IT Support</p>
+            <a href="#projects" class="cta-button">Xem dự án tiêu biểu</a>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="stats-container">
+            <div class="stat-item">
+                <h3>400+</h3>
+                <p>Dự án hoàn thành</p>
+            </div>
+            <div class="stat-item">
+                <h3>100%</h3>
+                <p>Tỉ lệ thành công</p>
+            </div>
+            <div class="stat-item">
+                <h3>5+</h3>
+                <p>Năm kinh nghiệm</p>
+            </div>
+            <div class="stat-item">
+                <h3>30%</h3>
+                <p>Tiết kiệm chi phí CPI</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <div class="section-header">
+            <h2>Hành trình nghề nghiệp</h2>
+            <div class="line"></div>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-date">2019 – HIỆN TẠI</div>
+                <h3>IFM Research Company</h3>
+                <p class="strong">Data Collection Operations Specialist</p>
+                <p>Vận hành Fieldwork online, điều phối mẫu toàn quốc và xây dựng các công cụ tự động hóa tracking dữ
+                    liệu.</p>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">2017 – 2019</div>
+                <h3>Frontend Developer</h3>
+                <p>2 năm kinh nghiệm phát triển giao diện người dùng, đặt nền tảng cho việc tự xây dựng các FW Tools sau
+                    này.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section" style="background: #f3f4f6;">
+        <div class="section-header">
+            <h2>Dự án tiêu biểu</h2>
+            <div class="line"></div>
+        </div>
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="project-img">
+                    <div
+                        style="width:100%; height:100%; background: linear-gradient(45deg, #a3322d, #111827); opacity:0.8;">
+                    </div>
+                </div>
+                <div class="project-content">
+                    <span class="project-tag">Investment Research</span>
+                    <h3>Dragon Capital - Base Study</h3>
+                    <p>Khảo sát diện rộng 6 thành phố lớn cho 3.000 completes nhắm vào đối tượng thu nhập cao. Đảm bảo
+                        dữ liệu so sánh liên kỳ chính xác tuyệt đối.</p>
+                    <div class="project-meta">
+                        <span class="meta-tag">N=3,000</span>
+                        <span class="meta-tag">SEC ABCD</span>
+                        <span class="meta-tag">Quarterly Tracking</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="project-img">
+                    <div
+                        style="width:100%; height:100%; background: linear-gradient(45deg, #1f2937, #a3322d); opacity:0.8;">
+                    </div>
+                </div>
+                <div class="project-content">
+                    <span class="project-tag">Market Forecasting</span>
+                    <h3>Consumer Confidence Index (CCI)</h3>
+                    <p>Dự án tracking toàn quốc quy mô Urban & Rural thực hiện định kỳ 3 lần/năm. Tối ưu thu thập dữ
+                        liệu nông thôn trên Mobile.</p>
+                    <div class="project-meta">
+                        <span class="meta-tag">Nationwide</span>
+                        <span class="meta-tag">Rural Coverage</span>
+                        <span class="meta-tag">Custom Tooling</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card">
+                <div class="project-img">
+                    <div
+                        style="width:100%; height:100%; background: linear-gradient(45deg, #4b5563, #1f2937); opacity:0.8;">
+                    </div>
+                </div>
+                <div class="project-content">
+                    <span class="project-tag">Automation Tool</span>
+                    <h3>FW Automation Dashboard</h3>
+                    <p>Ứng dụng web tự xây xây dựng bằng AI & React giúp tự động hóa 80% quy trình đối soát incentive và
+                        theo dõi tiến độ thời gian thực.</p>
+                    <div class="project-meta">
+                        <span class="meta-tag">React</span>
+                        <span class="meta-tag">AI Integration</span>
+                        <span class="meta-tag">Real-time</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="clients" class="section clients">
+        <div class="section-header">
+            <h2 style="color: white;">Các đối tác đã đồng hành</h2>
+            <div class="line"></div>
+        </div>
+        <div class="clients-grid">
+            <div class="client-logo">Nestlé</div>
+            <div class="client-logo">PepsiCo</div>
+            <div class="client-logo">P&G</div>
+            <div class="client-logo">McKinsey</div>
+            <div class="client-logo">Shopee</div>
+            <div class="client-logo">Dragon Capital</div>
+            <div class="client-logo">Masan</div>
+            <div class="client-logo">CGV</div>
+            <div class="client-logo">Sun Life</div>
+            <div class="client-logo">Thiên Long</div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-links">
+            <a href="mailto:phamdongdien19@gmail.com">Email</a>
+            <a href="tel:0942637519">Phone</a>
+            <a href="https://linkedin.com">LinkedIn</a>
+        </div>
+        <p>&copy; 2026 Phạm Đông Điền. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling enhancement
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Sticky Nav opacity change
+        window.addEventListener('scroll', function () {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+            } else {
+                nav.style.boxShadow = 'none';
+            }
+        });
+    </script>
+</body>
+
+</html>
