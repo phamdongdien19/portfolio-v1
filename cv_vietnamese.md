@@ -34,17 +34,33 @@ Chuyên gia Fieldwork online trong lĩnh vực nghiên cứu thị trường v�
 *   **Phát triển FW Tools:** Vận dụng 2 năm kinh nghiệm Frontend Developer và AI để xây dựng các ứng dụng web nội bộ, giúp tự động hóa việc theo dõi tiến độ và kiểm tra chất lượng dữ liệu.
 *   **Tối ưu hóa quy trình:** Chuyển đổi các công việc thủ công, lặp lại thành các quy trình tự động, giảm thiểu sai sót do con người và tăng tốc độ triển khai dự án.
 *   **Hỗ trợ Kỹ thuật Toàn diện:** Đảm nhiệm vai trò IT Support cho công ty, từ việc quản lý thiết bị máy móc đến khắc phục mọi lỗi phần mềm/phần cứng cho thành viên trong team.
-*   **Hỗ trợ DP & QC:** Phối hợp cùng team Data Processing và Quality Control để xử lý các vấn đề dữ liệu phát sinh, đảm bảo báo cáo cuối cùng đạt chuẩn chất lượng cao nhất.
-
----
-
 ### DỰ ÁN CÔNG TY
-*   **Dự án Quản lý Mẫu Linh hoạt:** Phân bổ nguồn mẫu linh hoạt giúp giảm 20% CPI cho dự án lớn 1.200 completes.
-*   [Dự án công ty 2]: (Mô tả dự án của bạn tại đây)
+**Vận hành thành công hơn 400 dự án nghiên cứu thị trường định lượng trực tuyến với tỉ lệ dự án đạt chuẩn 100% (không có dự án thất bại).**
+
+**Các loại hình nghiên cứu đã thực hiện:**
+*   Thấu hiểu hành vi & Thói quen sử dụng (U&A - Usage & Attitude)
+*   Thử nghiệm khái niệm/Sản phẩm (Concept/Product Test)
+*   Theo dõi sức khỏe thương hiệu (Brand Tracking)
+*   Đo lường mức độ hài lòng khách hàng (CSAT/NPS)
+*   Khảo sát phân khúc thị trường (Market Segmentation)
+*   Khảo sát hiệu quả quảng cáo (Ad Tracking/Pre-post Tests)
+
+**Các ngành hàng (Sectors) đã phụ trách:**
+*   Hàng tiêu dùng nhanh (FMCG): Thực phẩm, Đồ uống, Chăm sóc cá nhân/gia đình.
+*   Công nghệ & Viễn thông (Tech & Telco)
+*   Tài chính & Ngân hàng (Finance & Banking)
+*   Bán lẻ & Thương mại điện tử (Retail & E-commerce)
+*   Dược phẩm & Chăm sóc sức khỏe (Healthcare/Pharmaceutical)
+*   Ô tô & Xe máy (Automotive)
+
+### CÁC DỰ ÁN TIÊU BIỂU (HERO PROJECTS)
+*(Phần này tôi đang chờ bạn cung cấp thông tin chi tiết cho 3 dự án có độ phức tạp kỹ thuật nhất hoặc tiết kiệm cost nhiều nhất)*
+1.  **Dự án tiêu biểu 1 (Kỹ thuật/Cost):** [Tên dự án/Mô tả ngắn] - Phân bổ nguồn mẫu linh hoạt giúp giảm 20% CPI cho dự án lớn 1.200 completes.
+2.  **Dự án tiêu biểu 2 (Kỹ thuật/Cost):** [Đang chờ thông tin...]
+3.  **Dự án tiêu biểu 3 (Kỹ thuật/Cost):** [Đang chờ thông tin...]
 
 ### DỰ ÁN CÁ NHÂN
 *   **Hệ thống FW Automation Tool:** Tự xây dựng công cụ quản lý trả thưởng tự động và theo dõi dự án dựa trên AI, giúp giảm thời gian đối soát thủ công đáng kể.
-*   [Dự án cá nhân 2]: (Mô tả dự án cá nhân của bạn tại đây)
 
 ---
 
