@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pham Dong Dien CV - v2 English</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --header-color: #a3322d;
+            --text-main: #1f2937;
+            --text-light: #4b5563;
+            --border-color: #d1d5db;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.5;
+            color: var(--text-main);
+            background-color: #f9fafb;
+            padding: 50px 0;
+        }
+
+        .cv-container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: white;
+            padding: 60px 50px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .name {
+            font-family: 'Crimson Pro', serif;
+            font-size: 42px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .contact-info {
+            font-size: 13px;
+            color: var(--text-light);
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        h2.section-title {
+            font-family: 'Crimson Pro', serif;
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--header-color);
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 10px;
+            padding-bottom: 2px;
+            text-transform: uppercase;
+        }
+
+        .objective {
+            font-size: 14px;
+            text-align: justify;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+
+        .item-title {
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .item-date {
+            font-size: 13px;
+            color: var(--text-light);
+            font-weight: 600;
+        }
+
+        .item-subtitle {
+            font-size: 14px;
+            font-style: italic;
+            color: var(--text-light);
+            margin-bottom: 5px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 15px;
+        }
+
+        li {
+            font-size: 13.5px;
+            position: relative;
+            margin-bottom: 4px;
+            padding-left: 15px;
+        }
+
+        li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #000;
+        }
+
+        .strong {
+            font-weight: 600;
+        }
+
+        .skills-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 8px;
+        }
+
+        .skill-item {
+            font-size: 13.5px;
+        }
+
+        .skill-item b {
+            font-weight: 600;
+        }
+
+        @media print {
+            body {
+                padding: 0;
+                background: white;
+            }
+
+            .cv-container {
+                box-shadow: none;
+                max-width: 100%;
+                width: 100%;
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cv-container">
+        <header>
+            <h1 class="name">PHAM DONG DIEN</h1>
+            <div class="contact-info">
+                <span>📞 0942637519</span>
+                <span>📧 phamdongdien19@gmail.com</span>
+                <span>📍 Ho Chi Minh City</span>
+            </div>
+        </header>
+
+        <section>
+            <h2 class="section-title">Objective</h2>
+            <p class="objective">
+                Online Fieldwork professional in the market research industry with 5 years of experience at IFM
+                Research. Expertise in bridging online quantitative data collection with technical solutions to optimize
+                costs (10–30% CPI reduction) while maintaining strict quality standards. Skilled in building AI-driven
+                tools to automate workflows and enhance overall project efficiency.
+            </p>
+        </section>
+
+        <section>
+            <h2 class="section-title">Work Experience</h2>
+            <div class="item-header">
+                <span class="item-title">IFM Research Company</span>
+                <span class="item-date">2019 – Present</span>
+            </div>
+            <div class="item-subtitle">
+                <span>Data Collection Operations Specialist – IT Support</span>
+                <span>Full-time</span>
+            </div>
+            <ul>
+                <li>Managed end-to-end sample processes, organized survey launches, and ensured data integrity.</li>
+                <li><span class="strong">Reduced operational costs by 10–30%</span> through strategic vendor bidding and
+                    flexible sample allocation.</li>
+                <li>Set up technical parameters and maintained relationships with new FW partners globally.</li>
+                <li>Developed internal Web Apps & FW Tools using <span class="strong">AI and Frontend</span> to automate
+                    60% of repetitive workflows.</li>
+                <li>Managed IT infrastructure and provided hardware/software support for the entire team.</li>
+                <li>Collaborated with DP & QC teams to process raw data, ensuring maximum accuracy and precision.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skill-item"><b>Fieldwork Management:</b> Sample Management, CPI Bidding, Vendor Relations,
+                    Project Financials.</div>
+                <div class="skill-item"><b>Technology:</b> Frontend Development (React, Vite), AI-driven Automation,
+                    Git.</div>
+                <div class="skill-item"><b>IT & Operations:</b> System Administration, Windows Hardware & Software
+                    Troubleshooting.</div>
+                <div class="skill-item"><b>Tools:</b> Custom FW Tools, Microsoft Excel (Advanced), Market Research
+                    Platforms.</div>
+                <div class="skill-item"><b>Languages:</b> Vietnamese (Native), English (Professional Email Writing &
+                    Basic Communication).</div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Corporate Projects</h2>
+            <div class="item-header">
+                <span class="item-title">Flexible Sample Management Project</span>
+                <span class="item-date">Completed</span>
+            </div>
+            <ul>
+                <li>Allocated sample sources flexibly, achieving a <span class="strong">20% CPI reduction</span> for a
+                    project with 1,200 completes.</li>
+                <li>Maintained strict QC standards throughout the end-to-end data collection process.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 class="section-title">Personal Projects</h2>
+            <div class="item-header">
+                <span class="item-title">FW Automation & Tracking Tool</span>
+                <span class="item-date">2024 - Present</span>
+            </div>
+            <div class="item-subtitle">
+                <span>React, AI Integration, Real-time Dashboard</span>
+            </div>
+            <ul>
+                <li>Built a web application for automated incentive management and real-time project tracking.</li>
+                <li>Integrated AI to automate reporting, reducing manual processing time by up to 80%.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 class="section-title">Education</h2>
+            <div class="item-header">
+                <span class="item-title">Hutech University of Technology</span>
+                <span class="item-date">20xx - 20xx</span>
+            </div>
+            <div class="item-subtitle">
+                <span>Major: Information Technology (IT)</span>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

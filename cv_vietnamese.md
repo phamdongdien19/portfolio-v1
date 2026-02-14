@@ -10,17 +10,18 @@ Chuyên gia Fieldwork online trong lĩnh vực nghiên cứu thị trường v�
 ---
 
 ## KỸ NĂNG CỐT LÕI
-*   **Fieldwork Management:** Quản lý mẫu (Sample), Bidding CPI với Vendor quốc tế, Tìm kiếm đối tác FW mới, Quản lý tiến độ & Ngân sách dự án (Direct Cost).
-*   **Technical Excellence:** Xây dựng Web App tối ưu công việc (Frontend/AI), Automation workflow, Setup Technical với đối tác (API/Redirect/Tracking).
-*   **IT Operations:** Quản trị thiết bị, khắc phục sự cố phần cứng/phần mềm (Windows/Laptop), Hỗ trợ kỹ thuật nội bộ.
-*   **Data Quality Control:** Hỗ trợ DP (Data Processing) và QC (Quality Control) cơ bản, đảm bảo tính sạch của dữ liệu đầu ra.
+*   **Quản lý Fieldwork:** Quản lý mẫu, Đấu thầu giá với Vendor quốc tế, Tìm kiếm đối tác mới, Quản lý tài chính dự án (Chi phí thực tế).
+*   **Công nghệ:** Phát triển Frontend (HTML/CSS, JS, React/Vite), Tự động hóa bằng AI, Git.
+*   **Vận hành IT:** Quản trị hệ thống, Khắc phục sự cố phần cứng/phần mềm, Hỗ trợ hệ điều hành Windows.
+*   **Công cụ:** Các công cụ FW tùy chỉnh, Microsoft Excel (Nâng cao), Nền tảng nghiên cứu thị trường.
+*   **Ngôn ngữ:** Tiếng Việt (Bản ngữ), Tiếng Anh (Giao tiếp cơ bản & Viết Email chuyên môn).
 
 ---
 
 ## KINH NGHIỆM LÀM VIỆC
 
 ### IFM Research | Data Collection & IT Support Specialist
-*Thời gian: [Tháng/Năm bắt đầu] – Hiện tại (5 năm)*
+*Thời gian: 2019 – Hiện tại (5 năm)*
 
 **Trọng trách chính trong Fieldwork Online:**
 *   **Quản trị Dữ liệu & Mẫu:** Quản lý xuyên suốt quy trình mẫu, tổ chức launch khảo sát và đảm bảo tính toàn vẹn dữ liệu thông qua QC đáp viên chặt chẽ.
