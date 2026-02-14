@@ -65,4 +65,16 @@ Extensive experience delivering large-scale quantitative operations across:
 *   **Healthcare**
 *   **Education**
 *   **Hospitality & Travel**
-*   **Logistics & Delivery**
+## HERO PROJECTS (CASE STUDIES)
+1.  **Project: Base Research (Client: Dragon Capital)**
+    *   **Challenge:** Large-scale national study (6 major cities) with 3,000 total completes (3 stages), targeting high-income segments (SEC ABCD).
+    *   **Solution:** Executed multi-stage tracking on Mobile platforms, ensuring strict data consistency across waves for quarterly trend comparison.
+    *   **Result:** Delivered comprehensive investor insight reports with high precision in year-over-year metrics.
+2.  **Project: Consumer Confidence Index (CCI)**
+    *   **Challenge:** Nationwide large-scale tracking covering both urban and rural areas across Vietnam, conducted 3 times per year.
+    *   **Solution:** Optimized rural data collection workflows via Mobile, ensuring representative sampling and tight quota control.
+    *   **Result:** Maintained a robust historical tracking database used for accurate monthly consumer trend forecasting.
+3.  **Project: [Hero Project 3]**
+    *   **Challenge:** [Awaiting your most technically complex or cost-efficient project...]
+    *   **Solution:** [Your strategic action...]
+    *   **Result:** [Quantifiable outcome...]

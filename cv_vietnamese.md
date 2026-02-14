@@ -57,18 +57,18 @@ Chuyên gia Fieldwork online trong lĩnh vực nghiên cứu thị trường v�
 *   Logistics & Giao vận (Logistics & Delivery)
 
 ### CÁC DỰ ÁN TIÊU BIỂU (HERO PROJECTS)
-1.  **Dự án tiêu biểu 1: CCI**
-    *   **Thách thức:** [Ví dụ: Quy mô N lớn, yêu cầu kỹ thuật Setup phức tạp]
-    *   **Giải pháp:** [Ví dụ: Điều phối đa nguồn mẫu và ứng dụng AI tự động hóa tracking]
-    *   **Kết quả:** [Ví dụ: Giảm 20% CPI, đảm bảo 100% tiến độ và chất lượng]
-2.  **Dự án tiêu biểu 2: Base**
-    *   **Thách thức:** [Đang chờ bạn mô tả ngắn...]
-    *   **Giải pháp:** [Đang chờ bạn mô tả ngắn...]
-    *   **Kết quả:** [Đang chờ bạn mô tả ngắn...]
+1.  **Dự án tiêu biểu 1: Nghiên cứu Base (Client: Dragon Capital)**
+    *   **Thách thức:** Khảo sát diện rộng toàn quốc (6 thành phố lớn) với quy mô 3.000 completes (tổng 3 giai đoạn), nhắm vào phân khúc thu nhập cao (15M+ VND).
+    *   **Giải pháp:** Vận hành thu thập Mobile đa giai đoạn, kiểm soát chặt chẽ tính nhất quán của dữ liệu để phục vụ đo lường và so sánh theo quý.
+    *   **Kết quả:** Cung cấp báo cáo phân tích sâu về nhà đầu tư, duy trì dữ liệu so sánh liên kỳ với độ chính xác tuyệt đối.
+2.  **Dự án tiêu biểu 2: Chỉ số Niềm tin Người tiêu dùng (CCI)**
+    *   **Thách thức:** Dự án tracking quy mô lớn bao phủ toàn quốc (từ thành thị đến nông thôn), thực hiện định kỳ 3 lần mỗi năm.
+    *   **Giải pháp:** Tối ưu hóa quy trình thu thập dữ liệu khu vực nông thôn (Rural) trên Mobile, đảm bảo tính đại diện và khớp mẫu gắt gao.
+    *   **Kết quả:** Duy trì hệ thống dữ liệu tracking chuẩn xác qua nhiều năm, hỗ trợ đắc lực cho việc dự báo xu hướng thị trường Việt Nam.
 3.  **Dự án tiêu biểu 3: [Cần tên dự án 3]**
-    *   **Thách thức:** [Đang chờ bạn mô tả ngắn...]
-    *   **Giải pháp:** [Đang chờ bạn mô tả ngắn...]
-    *   **Kết quả:** [Đang chờ bạn mô tả ngắn...]
+    *   **Thách thức:** [Đang chờ thông tin đắt giá nhất của bạn...]
+    *   **Giải pháp:** [Hành động vượt trội của bạn...]
+    *   **Kết quả:** [Con số ấn tượng nhất...]
 
 ### DỰ ÁN CÁ NHÂN
 *   **Hệ thống FW Automation Tool:** Tự xây dựng công cụ quản lý trả thưởng tự động và theo dõi dự án dựa trên AI, giúp giảm thời gian đối soát thủ công đáng kể.
