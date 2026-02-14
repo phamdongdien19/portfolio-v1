@@ -52,7 +52,6 @@ Chuyên gia Fieldwork online trong lĩnh vực nghiên cứu thị trường v�
 *   Bán lẻ & Thương mại điện tử (Retail & E-commerce)
 *   Mỹ phẩm & Chăm sóc cá nhân (Cosmetics & Personal Care)
 *   Xây dựng & Vật liệu (Construction & Materials)
-*   Hàng tiêu dùng (Consumer Goods)
 
 ### CÁC DỰ ÁN TIÊU BIỂU (HERO PROJECTS)
 *(Phần này tôi đang chờ bạn cung cấp thông tin chi tiết cho 3 dự án có độ phức tạp kỹ thuật nhất hoặc tiết kiệm cost nhiều nhất)*
