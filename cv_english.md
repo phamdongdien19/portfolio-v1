@@ -55,6 +55,14 @@ Online Fieldwork professional in the market research industry with 5 years of ex
 
 ---
 
-## LANGUAGES
-*   Vietnamese: Native
-*   English: Basic communication, proficient in professional email exchange and reading.
+## INDUSTRY COVERAGE
+Extensive experience delivering large-scale quantitative operations across:
+*   **FMCG:** Food, Dairy, Beverages, Home Care
+*   **Financial Services**
+*   **Technology & Fintech**
+*   **Retail & E-commerce**
+*   **Construction & Real Estate / Property**
+*   **Healthcare**
+*   **Education**
+*   **Hospitality & Travel**
+*   **Logistics & Delivery**

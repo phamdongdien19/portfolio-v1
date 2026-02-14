@@ -46,12 +46,15 @@ Chuyên gia Fieldwork online trong lĩnh vực nghiên cứu thị trường v�
 *   Khảo sát hiệu quả quảng cáo (Ad Tracking/Pre-post Tests)
 
 **Các ngành hàng (Sectors) đã phụ trách:**
-*   Hàng tiêu dùng nhanh (FMCG): Thực phẩm, Đồ uống, Chăm sóc cá nhân/gia đình.
-*   Công nghệ & Viễn thông (Tech & Telco)
-*   Tài chính & Ngân hàng (Finance & Banking)
+*   Hàng tiêu dùng nhanh (FMCG): Thực phẩm, Sữa, Đồ uống, Chăm sóc gia đình.
+*   Dịch vụ Tài chính (Financial Services)
+*   Công nghệ & Fintech (Technology & Fintech)
 *   Bán lẻ & Thương mại điện tử (Retail & E-commerce)
-*   Mỹ phẩm & Chăm sóc cá nhân (Cosmetics & Personal Care)
-*   Xây dựng & Vật liệu (Construction & Materials)
+*   Xây dựng & Bất động sản (Construction & Real Estate / Property)
+*   Y tế (Healthcare)
+*   Giáo dục (Education)
+*   Nhà hàng & Du lịch (Hospitality & Travel)
+*   Logistics & Giao vận (Logistics & Delivery)
 
 ### CÁC DỰ ÁN TIÊU BIỂU (HERO PROJECTS)
 1.  **Dự án tiêu biểu 1: CCI**
