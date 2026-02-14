@@ -54,10 +54,18 @@ Chuyên gia Fieldwork online trong lĩnh vực nghiên cứu thị trường v�
 *   Xây dựng & Vật liệu (Construction & Materials)
 
 ### CÁC DỰ ÁN TIÊU BIỂU (HERO PROJECTS)
-*(Phần này tôi đang chờ bạn cung cấp thông tin chi tiết cho 3 dự án có độ phức tạp kỹ thuật nhất hoặc tiết kiệm cost nhiều nhất)*
-1.  **Dự án tiêu biểu 1 (Kỹ thuật/Cost):** [Tên dự án/Mô tả ngắn] - Phân bổ nguồn mẫu linh hoạt giúp giảm 20% CPI cho dự án lớn 1.200 completes.
-2.  **Dự án tiêu biểu 2 (Kỹ thuật/Cost):** [Đang chờ thông tin...]
-3.  **Dự án tiêu biểu 3 (Kỹ thuật/Cost):** [Đang chờ thông tin...]
+1.  **Dự án tiêu biểu 1: CCI**
+    *   **Thách thức:** [Ví dụ: Quy mô N lớn, yêu cầu kỹ thuật Setup phức tạp]
+    *   **Giải pháp:** [Ví dụ: Điều phối đa nguồn mẫu và ứng dụng AI tự động hóa tracking]
+    *   **Kết quả:** [Ví dụ: Giảm 20% CPI, đảm bảo 100% tiến độ và chất lượng]
+2.  **Dự án tiêu biểu 2: Base**
+    *   **Thách thức:** [Đang chờ bạn mô tả ngắn...]
+    *   **Giải pháp:** [Đang chờ bạn mô tả ngắn...]
+    *   **Kết quả:** [Đang chờ bạn mô tả ngắn...]
+3.  **Dự án tiêu biểu 3: [Cần tên dự án 3]**
+    *   **Thách thức:** [Đang chờ bạn mô tả ngắn...]
+    *   **Giải pháp:** [Đang chờ bạn mô tả ngắn...]
+    *   **Kết quả:** [Đang chờ bạn mô tả ngắn...]
 
 ### DỰ ÁN CÁ NHÂN
 *   **Hệ thống FW Automation Tool:** Tự xây dựng công cụ quản lý trả thưởng tự động và theo dõi dự án dựa trên AI, giúp giảm thời gian đối soát thủ công đáng kể.
