@@ -77,6 +77,10 @@ Chuyên gia Fieldwork online trong lĩnh vực nghiên cứu thị trường v�
     *   **Giải pháp:** [Hành động vượt trội của bạn...]
     *   **Kết quả:** [Con số ấn tượng nhất...]
 
+### CHỨNG CHỈ & ĐÀO TẠO
+*   **Quản trị Mạng & Hệ thống (Computer Networking & System Administration):** Trung tâm Nhất Nghệ (Hoàn thành chương trình chuyên sâu).
+*   **Chứng chỉ nghề nghiệp nội bộ:** Đào tạo chuyên sâu về Quản lý Fieldwork & Kiểm soát chất lượng dữ liệu (IFM Research).
+
 ### DỰ ÁN CÁ NHÂN
 *   **Hệ thống FW Automation Tool:** Tự xây dựng công cụ quản lý trả thưởng tự động và theo dõi dự án dựa trên AI, giúp giảm thời gian đối soát thủ công đáng kể.
 

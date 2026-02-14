@@ -81,6 +81,10 @@ Extensive experience delivering large-scale quantitative operations across:
     *   **Challenge:** Nationwide large-scale tracking covering both urban and rural areas across Vietnam, conducted 3 times per year.
     *   **Solution:** Optimized rural data collection workflows via Mobile, ensuring representative sampling and tight quota control.
     *   **Result:** Maintained a robust historical tracking database used for accurate monthly consumer trend forecasting.
+## CERTIFICATIONS
+*   **Computer Networking & System Administration:** Nhat Nghe Education Center (Advanced Coursework).
+*   **Internal Quality Excellence:** Advanced Fieldwork Management & Data QC Certification (IFM Research).
+
 3.  **Project: [Hero Project 3]**
     *   **Challenge:** [Awaiting your most technically complex or cost-efficient project...]
     *   **Solution:** [Your strategic action...]
