@@ -45,6 +45,13 @@ Chuyên gia Fieldwork online trong lĩnh vực nghiên cứu thị trường v�
 *   Khảo sát phân khúc thị trường (Market Segmentation)
 *   Khảo sát hiệu quả quảng cáo (Ad Tracking/Pre-post Tests)
 
+### ĐỐI TÁC & KHÁCH HÀNG TIÊU BIỂU
+**Global / International FMCG:** Nestlé, PepsiCo, Procter & Gamble (P&G).
+**Finance / Investment / Insurance:** Dragon Capital, Sun Life.
+**Consulting:** McKinsey & Company.
+**Platform / Retail / Service:** Shopee, CGV Cinemas.
+**Local Manufacturer:** Masan Group, Thiên Long, Siêu Việt Group.
+
 **Các ngành hàng (Sectors) đã phụ trách:**
 *   Hàng tiêu dùng nhanh (FMCG): Thực phẩm, Sữa, Đồ uống, Chăm sóc gia đình.
 *   Dịch vụ Tài chính (Financial Services)

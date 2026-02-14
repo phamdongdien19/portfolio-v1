@@ -55,6 +55,13 @@ Online Fieldwork professional in the market research industry with 5 years of ex
 
 ---
 
+## NOTABLE CLIENTS
+*   **Global / International FMCG:** Nestlé, PepsiCo, Procter & Gamble (P&G)
+*   **Finance / Investment / Insurance:** Dragon Capital, Sun Life
+*   **Consulting:** McKinsey & Company
+*   **Platform / Retail / Service:** Shopee, CGV Cinemas
+*   **Local Manufacturer:** Masan Group, Thiên Long, Siêu Việt Group
+
 ## INDUSTRY COVERAGE
 Extensive experience delivering large-scale quantitative operations across:
 *   **FMCG:** Food, Dairy, Beverages, Home Care
