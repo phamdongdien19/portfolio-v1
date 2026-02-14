@@ -394,25 +394,31 @@
         }
 
         .client-logo-v2 {
-            height: 60px;
+            height: 50px;
             object-fit: contain;
-            filter: brightness(0) invert(1);
-            opacity: 0.8;
+            filter: grayscale(100%);
+            opacity: 0.5;
             transition: var(--transition);
         }
 
         .client-logo-v2:hover {
             opacity: 1;
-            filter: none;
+            filter: grayscale(0%);
             transform: scale(1.1);
         }
 
         .client-text-v2 {
             font-weight: 700;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             letter-spacing: 2px;
             text-transform: uppercase;
-            opacity: 0.8;
+            opacity: 0.5;
+            transition: var(--transition);
+        }
+
+        .client-text-v2:hover {
+            opacity: 1;
+            color: var(--accent1);
         }
 
         /* Footer */
