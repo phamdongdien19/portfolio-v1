@@ -5,25 +5,37 @@
     <title>Phạm Đông Điền | Portfolio v2</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic&family=Crimson+Pro:wght@400;600&display=swap" />
     <style>
         /* Modern reset and Forty-inspired CSS */
         :root {
             --bg: #242943;
             --overlay: rgba(36, 41, 67, 0.85);
             --header-bg: #242943;
-            --accent1: #6fc3df; /* Blue */
-            --accent2: #8d82c4; /* Purple */
-            --accent3: #ec8d81; /* Coral */
-            --accent4: #e7b788; /* Gold */
-            --accent5: #8ea9e8; /* Periwinkle */
-            --accent6: #a3322d; /* Red/Primary */
+            --accent1: #6fc3df;
+            /* Blue */
+            --accent2: #8d82c4;
+            /* Purple */
+            --accent3: #ec8d81;
+            /* Coral */
+            --accent4: #e7b788;
+            /* Gold */
+            --accent5: #8ea9e8;
+            /* Periwinkle */
+            --accent6: #a3322d;
+            /* Red/Primary */
             --white: #ffffff;
             --text-muted: rgba(255, 255, 255, 0.5);
             --transition: all 0.5s ease;
         }
 
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             background-color: var(--bg);
             color: var(--white);
@@ -33,13 +45,30 @@
             line-height: 1.65;
         }
 
-        a { color: var(--white); text-decoration: none; border-bottom: 2px solid transparent; transition: var(--transition); }
-        a:hover { border-bottom-color: var(--white); }
+        a {
+            color: var(--white);
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+            transition: var(--transition);
+        }
+
+        a:hover {
+            border-bottom-color: var(--white);
+        }
 
         /* Scrollbar */
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: var(--bg); }
-        ::-webkit-scrollbar-thumb { background: var(--accent6); border-radius: 4px; }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--bg);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--accent6);
+            border-radius: 4px;
+        }
 
         /* Header */
         #header {
@@ -54,15 +83,25 @@
             padding: 0 2em;
             background: var(--header-bg);
             z-index: 1000;
-            box-shadow: 0 0 1em rgba(0,0,0,0.5);
+            box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
         }
 
-        #header .logo { font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; font-size: 0.8em; }
-        #header .logo span { font-weight: 300; margin-left: 0.5em; opacity: 0.5; }
+        #header .logo {
+            font-weight: 600;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            font-size: 0.8em;
+        }
+
+        #header .logo span {
+            font-weight: 300;
+            margin-left: 0.5em;
+            opacity: 0.5;
+        }
 
         /* Banner */
         #banner {
-            height: 100vh;
+            min-height: 100vh;
             background-image: linear-gradient(var(--overlay), var(--overlay)), url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=2000');
             background-size: cover;
             background-position: center;
@@ -70,12 +109,31 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            padding: 2em;
+            padding: 6em 2em;
         }
 
-        .banner-inner { max-width: 800px; animation: fadeIn 1.5s ease; }
-        #banner h1 { font-size: 3.5em; font-weight: 600; letter-spacing: 0.05em; margin-bottom: 0.5em; border-bottom: 3px solid var(--white); display: inline-block; padding-bottom: 0.2em; }
-        #banner p { font-size: 1.2em; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 2em; opacity: 0.8; }
+        .banner-inner {
+            max-width: 900px;
+            animation: fadeIn 1.5s ease;
+        }
+
+        #banner h1 {
+            font-size: 3.5em;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.5em;
+            border-bottom: 3px solid var(--white);
+            display: inline-block;
+            padding-bottom: 0.2em;
+        }
+
+        #banner .intro-text {
+            font-size: 1.1em;
+            line-height: 1.8;
+            margin-bottom: 2.5em;
+            text-align: justify;
+            color: rgba(255, 255, 255, 0.9);
+        }
 
         .button {
             display: inline-block;
@@ -87,11 +145,22 @@
             letter-spacing: 0.2em;
             font-size: 0.8em;
             transition: var(--transition);
+            background: transparent;
+            cursor: pointer;
         }
-        .button:hover { background: var(--white); color: var(--bg); transform: scale(1.05); }
+
+        .button:hover {
+            background: var(--white);
+            color: var(--bg);
+            transform: scale(1.05);
+        }
 
         /* Mosaic Grid */
-        #main-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0; }
+        #main-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0;
+        }
 
         .tile {
             position: relative;
@@ -108,67 +177,308 @@
         .tile::before {
             content: '';
             position: absolute;
-            top: 0; left: 0; width: 100%; height: 100%;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
             background: var(--bg);
             opacity: 0.7;
             transition: opacity 0.5s ease;
             z-index: 1;
         }
 
-        .tile:hover::before { opacity: 0.4; }
+        .tile:hover::before {
+            opacity: 0.4;
+        }
 
-        .tile-content { position: relative; z-index: 2; transition: transform 0.5s ease; }
-        .tile:hover .tile-content { transform: scale(1.05); }
+        .tile-content {
+            position: relative;
+            z-index: 2;
+            transition: transform 0.5s ease;
+        }
 
-        .tile h2 { font-size: 1.8em; font-weight: 600; margin-bottom: 0.5em; border-bottom: 2px solid var(--white); display: inline-block; }
-        .tile h2::after { content: ''; display: block; width: 100%; height: 2px; background: var(--white); margin-top: 0.2em; }
-        .tile p { font-size: 0.8em; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0; }
+        .tile:hover .tile-content {
+            transform: scale(1.05);
+        }
+
+        .tile h2 {
+            font-size: 1.8em;
+            font-weight: 600;
+            margin-bottom: 0.5em;
+            border-bottom: 2px solid var(--white);
+            display: inline-block;
+        }
+
+        .tile p {
+            font-size: 0.8em;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-bottom: 0;
+        }
 
         /* Specific Tile Accents */
-        .tile.accent1 { background-color: var(--accent1); }
-        .tile.accent2 { background-color: var(--accent2); }
-        .tile.accent3 { background-color: var(--accent3); }
-        .tile.accent4 { background-color: var(--accent4); }
-        .tile.accent5 { background-color: var(--accent5); }
-        .tile.accent6 { background-color: var(--accent6); }
+        .tile.accent1 {
+            background-color: var(--accent1);
+        }
+
+        .tile.accent2 {
+            background-color: var(--accent2);
+        }
+
+        .tile.accent3 {
+            background-color: var(--accent3);
+        }
+
+        .tile.accent4 {
+            background-color: var(--accent4);
+        }
 
         /* Secondary Grid Section (Two Column Content) */
-        .section-split { display: grid; grid-template-columns: 1fr 1fr; background: #2e3450; }
-        .split-content { padding: 5em; }
-        .split-image { background-size: cover; background-position: center; min-height: 50vh; }
+        .section-split {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background: #2e3450;
+        }
 
-        .section-split h2 { font-size: 2em; margin-bottom: 1.5em; position: relative; display: inline-block; }
-        .section-split h2::after { content: ''; display: block; width: 80%; height: 2px; background: var(--white); margin-top: 0.5em; }
+        .split-content {
+            padding: 5em;
+        }
+
+        .split-image {
+            background-size: cover;
+            background-position: center;
+            min-height: 50vh;
+        }
+
+        .section-split h2 {
+            font-size: 2em;
+            margin-bottom: 1.5em;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-split h2::after {
+            content: '';
+            display: block;
+            width: 80%;
+            height: 2px;
+            background: var(--white);
+            margin-top: 0.5em;
+        }
 
         /* Timeline in Split */
-        .timeline-v2 { border-left: 2px solid rgba(255,255,255,0.2); padding-left: 2em; margin-top: 2em; }
-        .timeline-item-v2 { margin-bottom: 3em; position: relative; }
-        .timeline-item-v2::before { content: ''; position: absolute; left: -2.45em; top: 0.5em; width: 0.8em; height: 0.8em; border-radius: 50%; background: var(--accent6); }
-        .timeline-date-v2 { font-weight: 600; font-size: 0.8em; color: var(--accent1); margin-bottom: 0.5em; }
+        .timeline-v2 {
+            border-left: 2px solid rgba(255, 255, 255, 0.2);
+            padding-left: 2em;
+            margin-top: 2em;
+        }
 
-        /* Insight Section (White Background Pop) */
-        #insight-cta { background: var(--white); color: var(--bg); padding: 6em 2em; text-align: center; }
-        #insight-cta h2 { font-size: 3em; font-weight: 600; margin-bottom: 0.5em; color: var(--accent6); }
-        #insight-cta blockquote { font-family: 'Crimson Pro', serif; font-size: 1.8em; font-style: italic; max-width: 800px; margin: 0 auto; line-height: 1.4; color: #444; }
+        .timeline-item-v2 {
+            margin-bottom: 3.5em;
+            position: relative;
+        }
+
+        .timeline-item-v2::before {
+            content: '';
+            position: absolute;
+            left: -2.45em;
+            top: 0.5em;
+            width: 0.8em;
+            height: 0.8em;
+            border-radius: 50%;
+            background: var(--accent6);
+        }
+
+        .timeline-date-v2 {
+            font-weight: 600;
+            font-size: 0.8em;
+            color: var(--accent1);
+            margin-bottom: 0.5em;
+            text-transform: uppercase;
+        }
+
+        .timeline-item-v2 h3 {
+            font-size: 1.4em;
+            margin-bottom: 0.3em;
+        }
+
+        .timeline-item-v2 .role-tag {
+            font-size: 0.9em;
+            font-weight: 600;
+            color: var(--accent4);
+            display: block;
+            margin-bottom: 0.5em;
+        }
+
+        /* Collapsible Section */
+        details {
+            margin-top: 1.5em;
+        }
+
+        summary {
+            cursor: pointer;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            font-size: 0.8em;
+            opacity: 0.6;
+            transition: var(--transition);
+            outline: none;
+            list-style: none;
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        summary:hover {
+            opacity: 1;
+            color: var(--accent1);
+        }
+
+        .history-content {
+            padding-top: 2em;
+        }
+
+        /* Insight Section - High Contrast */
+        #insight-cta {
+            background: var(--white);
+            color: var(--bg);
+            padding: 8em 2em;
+            text-align: center;
+            border-top: 10px solid var(--accent6);
+        }
+
+        #insight-cta h2 {
+            font-size: 2.5em;
+            font-weight: 600;
+            margin-bottom: 1.5em;
+            color: var(--accent6);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        #insight-cta blockquote {
+            font-family: 'Crimson Pro', serif;
+            font-size: 2.2em;
+            font-style: italic;
+            max-width: 900px;
+            margin: 0 auto;
+            line-height: 1.3;
+            color: #111;
+            font-weight: 600;
+        }
+
+        #insight-cta .quote-sub {
+            margin-top: 3em;
+            font-weight: 600;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            font-size: 0.9em;
+            color: #666;
+        }
 
         /* Clients Wall */
-        #clients-footer { background: #242943; padding: 4em 0; border-top: 2px solid rgba(255,255,255,0.05); }
-        .client-grid-v2 { display: flex; flex-wrap: wrap; justify-content: center; gap: 3em; align-items: center; opacity: 0.6; }
-        .client-grid-v2 img, .client-grid-v2 div { height: 40px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; filter: brightness(0) invert(1); }
+        #clients-footer {
+            background: #242943;
+            padding: 6em 2em;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .client-grid-v2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 4em;
+            align-items: center;
+        }
+
+        .client-logo-v2 {
+            height: 60px;
+            object-fit: contain;
+            filter: brightness(0) invert(1);
+            opacity: 0.8;
+            transition: var(--transition);
+        }
+
+        .client-logo-v2:hover {
+            opacity: 1;
+            filter: none;
+            transform: scale(1.1);
+        }
+
+        .client-text-v2 {
+            font-weight: 700;
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            opacity: 0.8;
+        }
 
         /* Footer */
-        footer { background: #1b1f35; padding: 6em 2em; text-align: center; }
-        .contact-v2 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2em; max-width: 1000px; margin: 0 auto 4em; }
-        .contact-item-v2 h4 { font-size: 0.8em; letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 1em; opacity: 0.5; }
-        .contact-item-v2 a { font-size: 1.2em; font-weight: 600; }
+        footer {
+            background: #1b1f35;
+            padding: 6em 2em;
+            text-align: center;
+        }
 
-        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .contact-v2 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2em;
+            max-width: 1000px;
+            margin: 0 auto 4em;
+        }
+
+        .contact-item-v2 h4 {
+            font-size: 0.8em;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            margin-bottom: 1em;
+            opacity: 0.5;
+        }
+
+        .contact-item-v2 a {
+            font-size: 1.1em;
+            font-weight: 600;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
         @media (max-width: 980px) {
-            #main-grid, .section-split { grid-template-columns: 1fr; }
-            .tile { height: 35vh; }
-            #banner h1 { font-size: 2.5em; }
-            .split-content { padding: 3em 1.5em; }
+
+            #main-grid,
+            .section-split {
+                grid-template-columns: 1fr;
+            }
+
+            .tile {
+                height: 35vh;
+                padding: 2em;
+            }
+
+            #banner h1 {
+                font-size: 2.5em;
+            }
+
+            .split-content {
+                padding: 3em 1.5em;
+            }
+
+            .contact-v2 {
+                grid-template-columns: 1fr;
+                gap: 3em;
+            }
         }
     </style>
 </head>
@@ -176,47 +486,57 @@
 <body>
 
     <header id="header">
-        <a href="index.html" class="logo">PHẠM ĐÔNG ĐIỀN <span>PORTFOLIO</span></a>
+        <a href="#" class="logo">PHẠM ĐÔNG ĐIỀN <span>PORTFOLIO v2</span></a>
     </header>
 
     <section id="banner">
         <div class="banner-inner">
-            <h1>Hi, My name is Điền.</h1>
-            <p>Data Collection Operations Specialist – IT Support</p>
-            <a href="#main-grid" class="button">See My Work</a>
+            <h1>Chào bạn, mình là Điền.</h1>
+            <div class="intro-text">
+                Fieldwork Online Specialist với 5 năm kinh nghiệm tại IFM Research, tập trung vào quản lý sampling, điều
+                phối vendor và tối ưu vận hành thu thập dữ liệu định lượng. Có kinh nghiệm giảm 10–30% CPI thông qua
+                chiến lược phân bổ nguồn mẫu hiệu quả, đồng thời duy trì tiêu chuẩn QC nghiêm ngặt. Sở hữu nền tảng
+                Frontend Developer, chủ động xây dựng các công cụ ứng dụng AI nhằm tự động hóa quy trình và nâng cao
+                hiệu suất field.
+            </div>
+            <a href="#main-grid" class="button">Khám phá hồ sơ</a>
         </div>
     </section>
 
     <div id="main-grid">
         <!-- Tile 1: CCI -->
-        <article class="tile accent1" style="background-image: url('https://images.unsplash.com/photo-1551288049-bbda3865c170?auto=format&fit=crop&q=80&w=1000');">
+        <article class="tile accent1"
+            style="background-image: url('https://images.unsplash.com/photo-1551288049-bbda3865c170?auto=format&fit=crop&q=80&w=1000');">
             <div class="tile-content">
-                <h2>CCI Project</h2>
-                <p>Public Research & Marketing | IFM</p>
+                <h2>Dự án CCI</h2>
+                <p>Nghiên cứu công chúng & Marketing | IFM</p>
             </div>
         </article>
 
         <!-- Tile 2: Dragon Capital -->
-        <article class="tile accent2" style="background-image: url('https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&q=80&w=1000');">
+        <article class="tile accent2"
+            style="background-image: url('https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&q=80&w=1000');">
             <div class="tile-content">
-                <h2>Base Study</h2>
-                <p>Dragon Capital | Investment Research</p>
+                <h2>Dragon Capital</h2>
+                <p>Base Study | Nghiên cứu đầu tư</p>
             </div>
         </article>
 
         <!-- Tile 3: Automation -->
-        <article class="tile accent3" style="background-image: url('https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80&w=1000');">
+        <article class="tile accent3"
+            style="background-image: url('https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80&w=1000');">
             <div class="tile-content">
-                <h2>Automation Tools</h2>
-                <p>Web Apps & Process Automation</p>
+                <h2>Công cụ tự động hóa</h2>
+                <p>Web Apps & AI Process Automation</p>
             </div>
         </article>
 
         <!-- Tile 4: Metrics -->
-        <article class="tile accent4" style="background-image: url('https://images.unsplash.com/photo-1551288049-bbda3865c170?auto=format&fit=crop&q=80&w=1000');">
+        <article class="tile accent4"
+            style="background-image: url('https://images.unsplash.com/photo-1551288049-bbda3865c170?auto=format&fit=crop&q=80&w=1000');">
             <div class="tile-content">
-                <h2>Proven Impact</h2>
-                <p>400+ Projects | 100% Success Rate</p>
+                <h2>Hiệu quả thực tế</h2>
+                <p>400+ Dự án | 100% Thành công</p>
             </div>
         </article>
     </div>
@@ -224,63 +544,102 @@
     <!-- Experience Split -->
     <section class="section-split">
         <div class="split-content">
-            <h2>Career Journey</h2>
+            <h2>Hành trình nghề nghiệp</h2>
             <div class="timeline-v2">
+                <!-- IFM Research Merged -->
                 <div class="timeline-item-v2">
-                    <div class="timeline-date-v2">2024 – PRESENT</div>
+                    <div class="timeline-date-v2">2020 – HIỆN TẠI</div>
                     <h3>IFM Research</h3>
-                    <p>Data Collection Quanti (Panel Online). Focus on automation and web applications.</p>
+                    <span class="role-tag">Data Collection Quanti & IT Executive</span>
+                    <p>Vận hành Panel Online & Robot QC (Công việc chính). Song song quản trị hạ tầng IT và hỗ trợ kỹ
+                        thuật FW.</p>
                 </div>
-                <div class="timeline-item-v2">
-                    <div class="timeline-date-v2">2020 – 2024</div>
-                    <h3>IFM Research</h3>
-                    <p>IT Executive. Managing infrastructure and survey technology.</p>
-                </div>
+
+                <!-- FPT Software -->
                 <div class="timeline-item-v2">
                     <div class="timeline-date-v2">2018 – 2020</div>
                     <h3>FPT Software</h3>
-                    <p>Frontend Developer. Building robust web interfaces.</p>
+                    <span class="role-tag">Frontend Developer</span>
+                    <p>Phát triển giao diện ứng dụng Web chuyên nghiệp, tối ưu trải nghiệm người dùng.</p>
                 </div>
             </div>
-            <a href="#" class="button" style="margin-top: 2em;">Full Resume</a>
+
+            <!-- Pre-2018 History Collapsible -->
+            <details>
+                <summary>Xem thêm lịch sử trước đó</summary>
+                <div class="timeline-v2 history-content">
+                    <div class="timeline-item-v2">
+                        <div class="timeline-date-v2">2017 – 2018</div>
+                        <h3>HPCOMPUTERS</h3>
+                        <p>Laptop Servicing & Hardware Support.</p>
+                    </div>
+                    <div class="timeline-item-v2">
+                        <div class="timeline-date-v2">2016 – 2017</div>
+                        <h3>Freelance</h3>
+                        <p>Search Engine Optimization Executive (SEO & WordPress).</p>
+                    </div>
+                    <div class="timeline-item-v2">
+                        <div class="timeline-date-v2">2014 – 2015</div>
+                        <h3>Trường ĐH Sư Phạm TP.HCM</h3>
+                        <p>IT Support Technician.</p>
+                    </div>
+                </div>
+            </details>
         </div>
-        <div class="split-image" style="background-image: url('https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=1000');"></div>
+        <div class="split-image"
+            style="background-image: url('https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=1000');">
+        </div>
     </section>
 
-    <!-- Professional Insight (White Background Pop) -->
+    <!-- Professional Insight (High Contrast Pop) -->
     <section id="insight-cta">
-        <h2>Professional Insight</h2>
+        <h2>Góc nhìn chuyên môn</h2>
         <blockquote>
-            "You're not here to make reports. You're here to drive decisions that wouldn't happen without you."
+            "Bạn không ở đây để làm báo cáo. Bạn ở đây để thúc đẩy những quyết định mà nó sẽ không xảy ra nếu không có
+            bạn."
         </blockquote>
-        <p style="margin-top: 2em; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; font-size: 0.8em;">Market Research Value: Beyond The Deck</p>
+        <p class="quote-sub">Giá trị nghiên cứu thị trường: Vượt xa những bản Deck</p>
     </section>
 
     <!-- Project Highlight Split -->
     <section class="section-split" style="background: #242943;">
-        <div class="split-image" style="background-image: url('https://images.unsplash.com/photo-1553028826-f4804a6dba3b?auto=format&fit=crop&q=80&w=1000');"></div>
+        <div class="split-image"
+            style="background-image: url('https://images.unsplash.com/photo-1553028826-f4804a6dba3b?auto=format&fit=crop&q=80&w=1000');">
+        </div>
         <div class="split-content">
-            <h2>The Value Approach</h2>
-            <p style="margin-bottom: 2em;">In market research, value isn't a 20-slide deck. It's the confidence to act and the behavioral changes that follow. I build <strong>tools</strong>, not just reports, to turn insights into actionable assets.</p>
+            <h2>Cách tiếp cận giá trị</h2>
+            <p style="margin-bottom: 2em;">Trong nghiên cứu thị trường, giá trị không chỉ là một tệp slide. Đó là sự tự
+                tin để hành động và những thay đổi hành vi theo sau. Tôi xây dựng những <strong>công cụ</strong>, không
+                chỉ là báo cáo, để biến thông tin thành tài sản có thể thực thi.</p>
             <ul style="list-style: none;">
-                <li style="margin-bottom: 1em; border-left: 2px solid var(--accent6); padding-left: 1em;"><strong>Design for action:</strong> Thinking like a writer, not a reporter.</li>
-                <li style="margin-bottom: 1em; border-left: 2px solid var(--accent6); padding-left: 1em;"><strong>Measure what changed:</strong> Tracking the value of insights.</li>
-                <li style="margin-bottom: 1em; border-left: 2px solid var(--accent6); padding-left: 1em;"><strong>Actionable Tools:</strong> Unused insights = Zero value.</li>
+                <li style="margin-bottom: 1.5em; border-left: 2px solid var(--accent6); padding-left: 1em;">
+                    <strong>Thiết kế để hành động:</strong> Suy nghĩ như một người viết kịch bản, không phải người đưa
+                    tin.</li>
+                <li style="margin-bottom: 1.5em; border-left: 2px solid var(--accent6); padding-left: 1em;"><strong>Đo
+                        lường sự thay đổi:</strong> Theo dõi giá trị thực tế của các phân tích.</li>
+                <li style="margin-bottom: 1.5em; border-left: 2px solid var(--accent6); padding-left: 1em;"><strong>Công
+                        cụ thực thi:</strong> Thông tin không được sử dụng = Giá trị bằng không.</li>
             </ul>
         </div>
     </section>
 
     <div id="clients-footer">
         <div class="client-grid-v2">
-            <img src="https://logo-teka.com/wp-content/uploads/2025/06/nestle-logo.png" alt="Nestle">
-            <img src="https://logo-teka.com/wp-content/uploads/2025/08/pepsico-vertical-logo.png" alt="PepsiCo">
-            <img src="https://logo-teka.com/wp-content/uploads/2025/08/procter-gamble-logo.png" alt="P&G">
-            <div>MCKINSEY</div>
-            <img src="https://logo-teka.com/wp-content/uploads/2025/11/shopee-logo.png" alt="Shopee">
-            <img src="https://logo-teka.com/wp-content/uploads/2025/11/dragon-capital-logo.png" alt="Dragon Capital">
-            <div>MASAN</div>
-            <div>CGV</div>
-            <img src="https://logo-teka.com/wp-content/uploads/2025/11/sun-life-logo.png" alt="Sun Life">
+            <img src="https://logo-teka.com/wp-content/uploads/2025/06/nestle-logo.png" alt="Nestle"
+                class="client-logo-v2">
+            <img src="https://logo-teka.com/wp-content/uploads/2025/08/pepsico-vertical-logo.png" alt="PepsiCo"
+                class="client-logo-v2">
+            <img src="file:///C:/Users/hi/.gemini/antigravity/brain/aad36417-94bf-4e1d-af9c-9ec876b21a89/media__1771064061957.png"
+                alt="P&G" class="client-logo-v2">
+            <div class="client-text-v2">MCKINSEY</div>
+            <img src="file:///C:/Users/hi/.gemini/antigravity/brain/aad36417-94bf-4e1d-af9c-9ec876b21a89/media__1771063661147.png"
+                alt="Shopee" class="client-logo-v2">
+            <img src="file:///C:/Users/hi/.gemini/antigravity/brain/aad36417-94bf-4e1d-af9c-9ec876b21a89/media__1771064024443.png"
+                alt="Dragon Capital" class="client-logo-v2" style="filter: none; opacity: 1;">
+            <div class="client-text-v2">MASAN</div>
+            <div class="client-text-v2">CGV</div>
+            <img src="file:///C:/Users/hi/.gemini/antigravity/brain/aad36417-94bf-4e1d-af9c-9ec876b21a89/media__1771064088800.png"
+                alt="Sun Life" class="client-logo-v2" style="filter: none; opacity: 1;">
         </div>
     </div>
 
@@ -291,11 +650,11 @@
                 <a href="mailto:phamdongdien19@gmail.com">phamdongdien19@gmail.com</a>
             </div>
             <div class="contact-item-v2">
-                <h4>Phone</h4>
+                <h4>Điện thoại</h4>
                 <a href="tel:0942637519">0942 637 519</a>
             </div>
             <div class="contact-item-v2">
-                <h4>Social</h4>
+                <h4>Liên kết</h4>
                 <a href="https://linkedin.com">LinkedIn</a>
             </div>
         </div>
