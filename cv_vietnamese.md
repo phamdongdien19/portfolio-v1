@@ -1,5 +1,5 @@
 # PHẠM ĐÔNG ĐIỀN
-**Data Collection Operations Specialist & IT Operations**
+**Data Collection Operations Specialist – IT Support**
 Địa chỉ: Thành Phố Hồ Chí Minh | Email: phamdongdien19@gmail.com | Số điện thoại: 0942637519
 
 ---
