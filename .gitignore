@@ -1,0 +1,10 @@
+﻿cv_archives/
+phase_archives/
+phase 1/
+phase 2/
+portfolio/
+.gemini/
+*.pdf
+cv_*.md
+cv_*.html
+*.metadata.json
