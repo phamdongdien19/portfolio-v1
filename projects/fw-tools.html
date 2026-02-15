@@ -1,0 +1,189 @@
+<!DOCTYPE HTML>
+<html lang="vi">
+
+<head>
+    <title>FW Tools - Hệ thống quản trị Fieldwork | Phạm Đông Điền</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic&family=Crimson+Pro:wght@400;600&display=swap" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <style>
+        #main {
+            padding: 4em 0;
+            background: #242943;
+            color: #fff;
+            min-height: 80vh;
+        }
+
+        .inner {
+            width: 65em;
+            max-width: calc(100% - 3em);
+            margin: 0 auto;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2em;
+            color: var(--accent6);
+            text-decoration: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: 0.8em;
+        }
+
+        .back-link:hover {
+            color: #fff;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+        }
+
+        .meta {
+            margin-bottom: 3em;
+            opacity: 0.7;
+            font-size: 0.9em;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 1em;
+        }
+
+        .case-content section {
+            margin-bottom: 3em;
+        }
+
+        .case-content h2 {
+            color: var(--accent6);
+            margin-bottom: 1em;
+        }
+
+        .module-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2em;
+            margin-bottom: 3em;
+        }
+
+        .module-item {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2em;
+            border-radius: 4px;
+            border-left: 4px solid var(--accent6);
+        }
+
+        .module-item h3 {
+            color: #fff;
+            margin-bottom: 0.5em;
+        }
+
+        .stats-summary {
+            background: var(--accent6);
+            padding: 2em;
+            border-radius: 4px;
+            margin-top: 2em;
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+
+        .stat-val {
+            display: block;
+            font-size: 2em;
+            font-weight: 600;
+        }
+
+        .stat-label {
+            font-size: 0.8em;
+            text-transform: uppercase;
+            opacity: 0.8;
+        }
+
+        @media screen and (max-width: 736px) {
+            .module-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="header">
+        <a href="../index.html" class="logo">PHẠM ĐÔNG ĐIỀN <span>PORTFOLIO</span></a>
+    </header>
+
+    <div id="main">
+        <div class="inner">
+            <a href="../index.html" class="back-link">← Quay lại trang chủ</a>
+            <h1>FW Tools</h1>
+            <div class="meta">
+                <span>Hệ thống quản trị & Tối ưu hóa vận hành Fieldwork chuyên sâu</span>
+            </div>
+
+            <div class="case-content">
+                <section>
+                    <h2>Tổng quan giải pháp</h2>
+                    <p>FW Tools là bộ giải pháp Internal do tôi tự phát triển nhằm số hóa toàn bộ quy trình vận hành
+                        Fieldwork tại IFM Research. Hệ thống tập trung vào việc quản lý dữ liệu tập trung, tự động hóa
+                        các khâu lọc/chia mẫu và báo cáo real-time.</p>
+                </section>
+
+                <section>
+                    <h2>Các Module cốt lõi</h2>
+                    <div class="module-grid">
+                        <div class="module-item">
+                            <h3>Project Management</h3>
+                            <p>Quản lý tập trung hàng trăm dự án khảo sát, theo dõi trạng thái Active/Inactive, quản lý
+                                mã dự án và Survey ID một cách khoa học.</p>
+                        </div>
+                        <div class="module-item">
+                            <h3>Filter & Batch Operations</h3>
+                            <p>Hệ thống lọc respondents thông minh theo nhiều tiêu chí (Địa phương, Độ tuổi, Thu
+                                nhập...). Cho phép chia lượt gửi (Batch) chính xác, tối ưu hóa tỷ lệ chuyển đổi.</p>
+                        </div>
+                        <div class="module-item">
+                            <h3>Auto Report (Real-time)</h3>
+                            <p>Tự động tổng hợp Quota Report từ Alchemer API. Theo dõi Pacing (tiến độ thực tế vs mục
+                                tiêu) và đưa ra các khuyến nghị điều phối mẫu ngay lập tức.</p>
+                        </div>
+                        <div class="module-item">
+                            <h3>Direct Cost Calculator</h3>
+                            <p>Công cụ tính toán chi phí trực tiếp dựa trên đơn giá và số lượng mẫu, giúp kiểm soát ngân
+                                sách dự án chặt chẽ.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Giá trị thực tế</h2>
+                    <p>Thay vì sử dụng các file Excel rời rạc và rời rạc, FW Tools tạo ra một quy trình khép kín từ lúc
+                        nhận data đến khi hoàn tất field.</p>
+                    <div class="stats-summary">
+                        <div>
+                            <span class="stat-val">100%</span>
+                            <span class="stat-label">Dữ liệu được quản lý tập trung</span>
+                        </div>
+                        <div>
+                            <span class="stat-val">~70%</span>
+                            <span class="stat-label">Giảm thời gian làm báo cáo Quota</span>
+                        </div>
+                        <div>
+                            <span class="stat-val">Real-time</span>
+                            <span class="stat-label">Cảnh báo Pacing & Quota</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p style="text-align: center; font-size: 0.8em; opacity: 0.3; padding: 2em 0;">&copy; 2026 PHẠM ĐÔNG ĐIỀN.
+            DESIGN INSPIRED BY HTML5 UP.</p>
+    </footer>
+
+</body>
+
+</html>
