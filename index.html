@@ -183,7 +183,7 @@
         </div>
     </div>
 
-    <footer>
+    <footer class="reveal">
         <div class="contact-v2">
             <div class="contact-item-v2">
                 <h4>Email</h4>
@@ -200,6 +200,26 @@
         </div>
         <p style="font-size: 0.8em; opacity: 0.3;">&copy; 2026 PHẠM ĐÔNG ĐIỀN. DESIGN INSPIRED BY HTML5 UP.</p>
     </footer>
+
+    <script>
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section, .tile, .reveal').forEach(el => {
+            el.classList.add('reveal');
+            observer.observe(el);
+        });
+    </script>
 
 </body>
 
