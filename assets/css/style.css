@@ -332,7 +332,7 @@ summary:hover {
 
 /* Insight Section - High Contrast */
 #insight-cta {
-    background: var(--white);
+    background: linear-gradient(135deg, #ffffff 0%, #f9f9f9 100%);
     color: var(--bg);
     padding: 8em 2em;
     text-align: center;
@@ -345,27 +345,28 @@ summary:hover {
     margin-bottom: 1.5em;
     color: var(--accent6);
     text-transform: uppercase;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.15em;
 }
 
 #insight-cta blockquote {
     font-family: 'Crimson Pro', serif;
-    font-size: 2.2em;
+    font-size: 2.5em;
     font-style: italic;
     max-width: 900px;
     margin: 0 auto;
-    line-height: 1.3;
+    line-height: 1.4;
     color: #111;
     font-weight: 600;
+    letter-spacing: -0.01em;
 }
 
 #insight-cta .quote-sub {
-    margin-top: 3em;
+    margin-top: 3.5em;
     font-weight: 600;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.25em;
     text-transform: uppercase;
     font-size: 0.9em;
-    color: #666;
+    color: #888;
 }
 
 /* Clients Wall */
