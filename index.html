@@ -13,7 +13,7 @@
 <body>
 
     <header id="header">
-        <a href="#" class="logo">PHẠM ĐÔNG ĐIỀN <span>PORTFOLIO v2</span></a>
+        <a href="#" class="logo">PHẠM ĐÔNG ĐIỀN <span>PORTFOLIO</span></a>
     </header>
 
     <section id="banner">
@@ -26,7 +26,13 @@
                 Frontend Developer, chủ động xây dựng các công cụ ứng dụng AI nhằm tự động hóa quy trình và nâng cao
                 hiệu suất field.
             </div>
-            <a href="#main-grid" class="button">Khám phá hồ sơ</a>
+            <div class="intro-buttons" style="margin-top: 2em; display: flex; gap: 1em;">
+                <a href="#main-grid" class="button">Khám phá hồ sơ</a>
+                <a href="https://github.com/phamdongdien19/portfolio-v1/raw/main/cv_archives/CV%20Le%20Vinh%20Khang.pdf"
+                    class="button" target="_blank"
+                    style="background: transparent; border: 1px solid var(--accent6); color: var(--accent6);">Tải CV của
+                    mình</a>
+            </div>
         </div>
     </section>
 
@@ -34,37 +40,45 @@
         <!-- Tile 1: CCI -->
         <article class="tile accent1"
             style="background-image: url('https://images.unsplash.com/photo-1551288049-bbda3865c170?auto=format&fit=crop&q=80&w=1000');">
-            <div class="tile-content">
-                <h2>Dự án CCI</h2>
-                <p>Nghiên cứu công chúng & Marketing | IFM</p>
-            </div>
+            <a href="projects/case-study-cci.html">
+                <div class="tile-content">
+                    <h2>Dự án CCI</h2>
+                    <p>Nghiên cứu công chúng & Marketing | IFM</p>
+                </div>
+            </a>
         </article>
 
         <!-- Tile 2: Dragon Capital -->
         <article class="tile accent2"
             style="background-image: url('https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&q=80&w=1000');">
-            <div class="tile-content">
-                <h2>Dragon Capital</h2>
-                <p>Base Study | Nghiên cứu đầu tư</p>
-            </div>
+            <a href="#">
+                <div class="tile-content">
+                    <h2>Dragon Capital</h2>
+                    <p>Base Study | Nghiên cứu đầu tư</p>
+                </div>
+            </a>
         </article>
 
         <!-- Tile 3: Automation -->
         <article class="tile accent3"
             style="background-image: url('https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80&w=1000');">
-            <div class="tile-content">
-                <h2>Công cụ tự động hóa</h2>
-                <p>Web Apps & AI Process Automation</p>
-            </div>
+            <a href="projects/automation-tools.html">
+                <div class="tile-content">
+                    <h2>Công cụ tự động hóa</h2>
+                    <p>Web Apps & AI Process Automation</p>
+                </div>
+            </a>
         </article>
 
         <!-- Tile 4: Metrics -->
         <article class="tile accent4"
             style="background-image: url('https://images.unsplash.com/photo-1551288049-bbda3865c170?auto=format&fit=crop&q=80&w=1000');">
-            <div class="tile-content">
-                <h2>Hiệu quả thực tế</h2>
-                <p>400+ Dự án | 100% Thành công</p>
-            </div>
+            <a href="#">
+                <div class="tile-content">
+                    <h2>Hiệu quả thực tế</h2>
+                    <p>400+ Dự án | 100% Thành công</p>
+                </div>
+            </a>
         </article>
     </div>
 
@@ -135,18 +149,20 @@
         </div>
         <div class="split-content">
             <h2>Cách tiếp cận giá trị</h2>
-            <p style="margin-bottom: 2em;">Trong nghiên cứu thị trường, giá trị không chỉ là một tệp slide. Đó là sự tự
-                tin để hành động và những thay đổi hành vi theo sau. Tôi xây dựng những <strong>công cụ</strong>, không
-                chỉ là báo cáo, để biến thông tin thành tài sản có thể thực thi.</p>
+            <p style="margin-bottom: 2em;">Trong nghiên cứu thị trường, giá trị thật sự nằm ở độ tin cậy của dữ liệu đầu
+                vào. Tôi không chỉ vận hành dự án, tôi xây dựng các hệ thống kiểm soát thông minh để biến mỗi phản hồi
+                thành một viên gạch vững chắc cho chiến lược kinh doanh.</p>
             <ul style="list-style: none;">
                 <li style="margin-bottom: 1.5em; border-left: 2px solid var(--accent6); padding-left: 1em;">
-                    <strong>Thiết kế để hành động:</strong> Suy nghĩ như một người viết kịch bản, không phải người đưa
-                    tin.
+                    <strong>Tối ưu hóa Sampling:</strong> Giảm 10-30% CPI nhờ chiến lược phân bổ nguồn mẫu linh hoạt và
+                    thương lượng vendor hiệu quả.
                 </li>
-                <li style="margin-bottom: 1.5em; border-left: 2px solid var(--accent6); padding-left: 1em;"><strong>Đo
-                        lường sự thay đổi:</strong> Theo dõi giá trị thực tế của các phân tích.</li>
-                <li style="margin-bottom: 1.5em; border-left: 2px solid var(--accent6); padding-left: 1em;"><strong>Công
-                        cụ thực thi:</strong> Thông tin không được sử dụng = Giá trị bằng không.</li>
+                <li style="margin-bottom: 1.5em; border-left: 2px solid var(--accent6); padding-left: 1em;"><strong>Tiêu
+                        chuẩn QC nghiêm ngặt:</strong> Đảm bảo dữ liệu "đủ vững" ngay từ khâu thu thập để mọi quyết định
+                    sau đó đều chính xác.</li>
+                <li style="margin-bottom: 1.5em; border-left: 2px solid var(--accent6); padding-left: 1em;"><strong>Vận
+                        hành tự động hóa:</strong> Phát triển các công cụ (Data Tools) giúp tối ưu hóa quy trình, giảm
+                    thiểu lỗi thủ công và đẩy nhanh tốc độ fieldwork gấp 2-3 lần.</li>
             </ul>
         </div>
     </section>

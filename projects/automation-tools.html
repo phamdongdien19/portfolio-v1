@@ -1,0 +1,194 @@
+<!DOCTYPE HTML>
+<html lang="vi">
+
+<head>
+    <title>Công cụ tự động hóa Fieldwork | Phạm Đông Điền</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic&family=Crimson+Pro:wght@400;600&display=swap" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <style>
+        #main {
+            padding: 4em 0;
+            background: #242943;
+            color: #fff;
+            min-height: 80vh;
+        }
+
+        .inner {
+            width: 65em;
+            max-width: calc(100% - 3em);
+            margin: 0 auto;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2em;
+            color: var(--accent6);
+            text-decoration: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: 0.8em;
+        }
+
+        .back-link:hover {
+            color: #fff;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+        }
+
+        .meta {
+            margin-bottom: 3em;
+            opacity: 0.7;
+            font-size: 0.9em;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 1em;
+        }
+
+        .case-content section {
+            margin-bottom: 3em;
+        }
+
+        .case-content h2 {
+            color: var(--accent6);
+            margin-bottom: 1em;
+        }
+
+        .highlight-box {
+            background: rgba(var(--accent6-rgb, 212, 63, 141), 0.1);
+            border-left: 4px solid var(--accent6);
+            padding: 2em;
+            margin: 2em 0;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2em;
+            margin-top: 2em;
+        }
+
+        .stat-item {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2em;
+            border-radius: 4px;
+        }
+
+        .stat-item .number {
+            display: block;
+            font-size: 2.5em;
+            font-weight: 600;
+            color: var(--accent6);
+        }
+
+        .stat-item .label {
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            opacity: 0.7;
+        }
+
+        .tools-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1em;
+            list-style: none;
+            padding: 0;
+        }
+
+        .tools-list li {
+            background: var(--accent6);
+            color: #fff;
+            padding: 0.3em 1em;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="header">
+        <a href="../index.html" class="logo">PHẠM ĐÔNG ĐIỀN <span>PORTFOLIO</span></a>
+    </header>
+
+    <div id="main">
+        <div class="inner">
+            <a href="../index.html" class="back-link">← Quay lại trang chủ</a>
+            <h1>Công cụ tự động hóa Fieldwork</h1>
+            <div class="meta">
+                <span>Tối ưu hóa quy trình thu thập dữ liệu định lượng</span> | <span>2022 – Hiện tại</span>
+            </div>
+
+            <div class="case-content">
+                <section>
+                    <h2>Thách thức trong vận hành</h2>
+                    <p>Trong nghiên cứu định lượng (Quantitative Research), việc kiểm soát hàng ngàn bảng hỏi mỗi ngày
+                        cực kỳ tốn thời gian. Các lỗi như "speeders" (trả lời quá nhanh) hay "straight-lining" (trả lời
+                        trùng lặp) nếu không phát hiện kịp thời sẽ làm giảm chất lượng dữ liệu và uy tín của dự án.</p>
+                </section>
+
+                <div class="highlight-box">
+                    <h3>Giải pháp: Hệ thống tự động hóa Data Tools</h3>
+                    <p>Tôi đã thiết kế và triển khai bộ công cụ tự động hóa giúp quét 100% dữ liệu khảo sát trong thời
+                        gian thực, phát hiện ngay lập tức các mẫu không đạt chuẩn dựa trên thuật toán hành vi.</p>
+                </div>
+
+                <section>
+                    <h2>Chức năng chính</h2>
+                    <ul>
+                        <li><strong>Kiểm soát thời gian thực:</strong> Tự động loại bỏ các bản ghi hoàn thành bất thường
+                            ngay khi survey đang diễn ra.</li>
+                        <li><strong>Phân tích hành vi (Pattern Recognition):</strong> Phát hiện các mẫu trả lời lặp lại
+                            hoặc mâu thuẫn logic giữa các câu hỏi.</li>
+                        <li><strong>Thông báo tức thời:</strong> Tích hợp Zalo/Viber Bot để cảnh báo giám sát viên khi
+                            có dấu hiệu field bị tấn công bởi spam hoặc bot.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Kết quả ấn tượng</h2>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="number">~30p</span>
+                            <span class="label">Thời gian làm sạch dữ liệu</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="number">100%</span>
+                            <span class="label">Tỷ lệ quét dữ liệu</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="number">3x</span>
+                            <span class="label">Hiệu suất đội ngũ QC</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Công nghệ nền tảng</h2>
+                    <ul class="tools-list">
+                        <li>Node.js</li>
+                        <li>Firebase Functions</li>
+                        <li>Zalo/API Integration</li>
+                        <li>Excel Automation</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p style="text-align: center; font-size: 0.8em; opacity: 0.3; padding: 2em 0;">&copy; 2026 PHẠM ĐÔNG ĐIỀN.
+            DESIGN INSPIRED BY HTML5 UP.</p>
+    </footer>
+
+</body>
+
+</html>
