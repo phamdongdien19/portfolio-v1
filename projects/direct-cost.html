@@ -1,0 +1,454 @@
+<!DOCTYPE HTML>
+<html lang="vi">
+
+<head>
+    <title>Excel Top Up Splitter - High Fidelity Simulation | Phạm Đông Điền</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic&family=Crimson+Pro:wght@400;600&display=swap" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <style>
+        #main {
+            padding: 4em 0;
+            background: #242943;
+            color: #fff;
+            min-height: 100vh;
+        }
+
+        .inner {
+            width: 70em;
+            max-width: calc(100% - 3em);
+            margin: 0 auto;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2em;
+            color: var(--accent6);
+            text-decoration: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: 0.8em;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+
+        .back-link:hover {
+            opacity: 1;
+            color: #fff;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 0.2em;
+            color: #fff;
+        }
+
+        .meta {
+            margin-bottom: 3em;
+            display: flex;
+            align-items: center;
+            gap: 1.5em;
+            font-size: 0.9em;
+            opacity: 0.8;
+            padding-bottom: 1.5em;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .badge-ecosystem {
+            background: var(--accent6);
+            color: #fff;
+            padding: 0.3em 0.8em;
+            border-radius: 4px;
+            font-weight: 700;
+            font-size: 0.8em;
+            text-transform: uppercase;
+        }
+
+        /* Simulation Styles */
+        .app-container {
+            background: #1d2138;
+            border-radius: 12px;
+            padding: 2.5em;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            margin-top: 2em;
+        }
+
+        .section-header {
+            font-weight: 600;
+            margin-bottom: 1.5em;
+            padding-left: 10px;
+            border-left: 4px solid var(--accent6);
+            color: var(--accent6);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* Collapsible Guide */
+        details.guide {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 8px;
+            margin-bottom: 2em;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        details.guide summary {
+            padding: 1em 1.5em;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.9em;
+            color: rgba(255, 255, 255, 0.7);
+            list-style: none;
+        }
+
+        details.guide summary::before {
+            content: 'ℹ ';
+            color: var(--accent6);
+        }
+
+        details.guide[open] summary {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .guide-content {
+            padding: 1.5em;
+            font-size: 0.85em;
+            color: rgba(255, 255, 255, 0.6);
+            line-height: 1.6;
+        }
+
+        /* Drop Zone */
+        .drop-box {
+            border: 2px dashed rgba(255, 255, 255, 0.15);
+            padding: 4em 2em;
+            text-align: center;
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.02);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .drop-box:hover {
+            border-color: var(--accent6);
+            background: rgba(var(--accent6-rgb), 0.05);
+        }
+
+        .drop-box .icon {
+            font-size: 3em;
+            display: block;
+            margin-bottom: 0.5em;
+        }
+
+        .file-info {
+            margin-top: 1.5em;
+            display: flex;
+            align-items: center;
+            gap: 1em;
+            padding: 1em;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 6px;
+        }
+
+        .autodetect-badge {
+            background: #4caf50;
+            font-size: 0.7em;
+            padding: 2px 6px;
+            border-radius: 3px;
+            margin-left: 10px;
+        }
+
+        /* Mapping UI */
+        .mapping-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 1.5em;
+            margin-top: 2em;
+        }
+
+        .mapping-item {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5em;
+        }
+
+        .mapping-label {
+            font-size: 0.85em;
+            font-weight: 600;
+            opacity: 0.7;
+        }
+
+        select.custom-select {
+            background: #242943;
+            color: #fff;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            padding: 0.8em;
+            border-radius: 6px;
+            width: 100%;
+        }
+
+        /* Preview Table */
+        .preview-scroll {
+            overflow-x: auto;
+            margin-top: 2em;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            padding: 1em;
+        }
+
+        .preview-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.8em;
+            min-width: 600px;
+        }
+
+        .preview-table th {
+            text-align: left;
+            padding: 1em;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+            color: var(--accent6);
+            font-weight: 700;
+        }
+
+        .preview-table td {
+            padding: 1em;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            opacity: 0.8;
+        }
+
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            background: #4caf50;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 5px;
+        }
+
+        /* Action Button */
+        .btn-split {
+            background: var(--accent6);
+            color: #fff;
+            border: none;
+            padding: 1em 2.5em;
+            border-radius: 6px;
+            font-weight: 700;
+            cursor: pointer;
+            margin-top: 2em;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            transition: transform 0.2s;
+        }
+
+        .btn-split:hover {
+            transform: translateY(-2px);
+        }
+
+        @media screen and (max-width: 736px) {
+            .mapping-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .app-container {
+                padding: 1.5em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="header">
+        <a href="../index.html" class="logo">PHẠM ĐÔNG ĐIỀN <span>PORTFOLIO</span></a>
+    </header>
+
+    <div id="main">
+        <div class="inner">
+            <a href="../index.html" class="back-link">← Quay lại trang chủ</a>
+            <h1>Excel Top Up Splitter</h1>
+            <div class="meta">
+                <span class="badge-ecosystem">Part of FW Tools Ecosystem</span>
+                <span>Automated Incentive Processing & Validation</span>
+            </div>
+
+            <p style="margin-bottom: 3em; opacity: 0.8;">Bản mô phỏng chi tiết dưới đây tái hiện lại giao diện và luồng
+                hoạt động thực tế của ứng dụng <strong>Excel Top Up Splitter</strong>. Công cụ này giải quyết bài toán
+                xử lý hàng ngàn giao dịch nạp tiền từ file tổng thành các báo cáo riêng biệt cho từng đối tác phân phối.
+            </p>
+
+            <div class="app-container">
+                <!-- 1. Requirements Guide -->
+                <details class="guide">
+                    <summary>File Requirements Guide</summary>
+                    <div class="guide-content">
+                        <p>Để hệ thống hoạt động chính xác, file Excel của bạn cần đảm bảo các tiêu chí:</p>
+                        <ul style="margin: 1em 0; padding-left: 1.5em;">
+                            <li>Định dạng file: .xlsx, .xls</li>
+                            <li>Tên file nên chứa Mã dự án (6 chữ số) để hệ thống tự động nhận diện.</li>
+                            <li>Dữ liệu không được để trống ở các cột Số điện thoại và Mệnh giá.</li>
+                        </ul>
+                    </div>
+                </details>
+
+                <!-- 2. Input File -->
+                <div class="section-header">1. Upload Input File</div>
+                <div class="drop-box">
+                    <span class="icon">📁</span>
+                    <strong>Sẵn sàng để xử lý</strong><br>
+                    <span style="font-size: 0.8em; opacity: 0.6;">Kéo & thả file Excel vào đây hoặc click để chọn
+                        file</span>
+                </div>
+
+                <div class="file-info">
+                    <span style="font-size: 1.2em;">📄</span>
+                    <div style="flex: 1;">
+                        <span style="font-size: 0.9em; font-weight: 600;">Project_Incentive_250116_v1.xlsx</span>
+                        <span class="autodetect-badge">Detected: 250116</span>
+                    </div>
+                    <span style="font-size: 0.8em; opacity: 0.6;">650 KB | 5,200 rows</span>
+                </div>
+
+                <!-- 3. Mapping Configuration -->
+                <div class="section-header" style="margin-top: 3em;">2. Configuration & Mapping</div>
+                <p style="font-size: 0.8em; opacity: 0.6; margin-bottom: 1em;">Hệ thống tự động map các tiêu đề cột. Bạn
+                    có thể chỉnh sửa lại nếu cần thiết.</p>
+
+                <div class="mapping-grid">
+                    <div class="mapping-item">
+                        <label class="mapping-label">Phone Column</label>
+                        <select class="custom-select">
+                            <option>Mobile_No (Auto)</option>
+                            <option>Phone_Number</option>
+                            <option>Receiver</option>
+                        </select>
+                    </div>
+                    <div class="mapping-item">
+                        <label class="mapping-label">Amount Column</label>
+                        <select class="custom-select">
+                            <option>Incentive_VND (Auto)</option>
+                            <option>Value</option>
+                            <option>Topup_Amount</option>
+                        </select>
+                    </div>
+                    <div class="mapping-item">
+                        <label class="mapping-label">Vendor/Region Column</label>
+                        <select class="custom-select">
+                            <option>Distributor_Key (Auto)</option>
+                            <option>Vendor_Name</option>
+                            <option>Provider</option>
+                        </select>
+                    </div>
+                    <div class="mapping-item">
+                        <label class="mapping-label">Project Code (Manually override)</label>
+                        <input type="text" value="250116" class="custom-select"
+                            style="background: transparent; border-color: rgba(255,255,255,0.05);">
+                    </div>
+                </div>
+
+                <!-- 4. Preview Table -->
+                <div class="section-header" style="margin-top: 3em;">3. Data Preview & Validation</div>
+                <div class="preview-scroll">
+                    <table class="preview-table">
+                        <thead>
+                            <tr>
+                                <th>Index</th>
+                                <th>Project Code</th>
+                                <th>Phone Number</th>
+                                <th>Value</th>
+                                <th>Distributor</th>
+                                <th>Target Output</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>250116</td>
+                                <td>090****123</td>
+                                <td>50,000 VND</td>
+                                <td>Vendor A</td>
+                                <td><span class="status-dot"></span> file_dist_A.xlsx</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>250116</td>
+                                <td>098****456</td>
+                                <td>100,000 VND</td>
+                                <td>Vendor B</td>
+                                <td><span class="status-dot"></span> file_dist_B.xlsx</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>250116</td>
+                                <td>091****789</td>
+                                <td>50,000 VND</td>
+                                <td>Vendor A</td>
+                                <td><span class="status-dot"></span> file_dist_A.xlsx</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- 4. Quick Budget Estimation -->
+                <div class="section-header" style="margin-top: 3em;">4. Quick Budget Estimation</div>
+                <div
+                    style="background: rgba(var(--accent6-rgb), 0.1); border: 1px solid var(--accent6); border-radius: 8px; padding: 1.5em; display: flex; justify-content: space-around; text-align: center; flex-wrap: wrap; gap: 1em;">
+                    <div>
+                        <span
+                            style="display: block; font-size: 0.7em; opacity: 0.7; text-transform: uppercase;">Estimated
+                            Total Cost</span>
+                        <span style="font-size: 1.4em; font-weight: 700;">260,000,000 VND</span>
+                    </div>
+                    <div style="border-left: 1px solid rgba(255,255,255,0.1); padding-left: 1em;">
+                        <span style="display: block; font-size: 0.7em; opacity: 0.7; text-transform: uppercase;">Average
+                            CPI</span>
+                        <span style="font-size: 1.4em; font-weight: 700;">50,000 VND</span>
+                    </div>
+                    <div style="border-left: 1px solid rgba(255,255,255,0.1); padding-left: 1em;">
+                        <span style="display: block; font-size: 0.7em; opacity: 0.7; text-transform: uppercase;">Budget
+                            Utilization</span>
+                        <span style="font-size: 1.4em; font-weight: 700;">65%</span>
+                    </div>
+                </div>
+                <p style="margin-top: 1em; font-size: 0.8em; opacity: 0.6; text-align: center;">
+                    ℹ Tính năng ước tính nhanh giúp Project Manager nắm bắt tình hình tài chính tức thời để phân bổ ngân
+                    sách còn lại hiệu quả.
+                </p>
+
+                <div style="text-align: center; margin-top: 2em;">
+                    <button class="btn-split">Run Splitter & Download ZIP</button>
+                    <p style="font-size: 0.7em; opacity: 0.5; margin-top: 1em;">* Ứng dụng xử lý dữ liệu hoàn toàn tại
+                        trình duyệt (Full Client-side), đảm bảo bảo mật dữ liệu tuyệt đối.</p>
+                </div>
+            </div>
+
+            <!-- Value Proposition -->
+            <section style="margin-top: 4em;">
+                <h2 style="color: var(--accent6);">Tại sao công cụ này quan trọng?</h2>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3em; margin-top: 1.5em;">
+                    <div>
+                        <h4 style="margin-bottom: 0.5em;">Độ chính xác & Về đích nhanh</h4>
+                        <p style="font-size: 0.9em; opacity: 0.8;">Loại bỏ nhầm lẫn vendor và nắm bắt tổng chi phí sớm
+                            giúp PM đưa ra quyết định phân bổ mẫu chính xác, góp phần đẩy dự án về đích đúng hạn.</p>
+                    </div>
+                    <div>
+                        <h4 style="margin-bottom: 0.5em;">Tối ưu hóa nguồn vốn</h4>
+                        <p style="font-size: 0.9em; opacity: 0.8;">Cung cấp cái nhìn tức thời về ngân sách đã sử dụng so
+                            với kế hoạch, giúp tái phân bổ vốn cho các quota khó hoặc vendor dự phòng hiệu quả.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <p style="text-align: center; font-size: 0.8em; opacity: 0.3; padding: 2em 0;">&copy; 2026 PHẠM ĐÔNG ĐIỀN.
+            DESIGN INSPIRED BY HTML5 UP.</p>
+    </footer>
+
+</body>
+
+</html>

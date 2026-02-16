@@ -2,7 +2,7 @@
 <html lang="vi">
 
 <head>
-    <title>Project Hub - Hệ thống quản trị Fieldwork | Phạm Đông Điền</title>
+    <title>Data Operation - Xử lý & Điều phối mẫu | Phạm Đông Điền</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet"
@@ -100,6 +100,37 @@
             opacity: 0.8;
         }
 
+        .report-box {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1.5em;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .chart-sim {
+            display: flex;
+            align-items: flex-end;
+            gap: 10px;
+            height: 150px;
+            padding-top: 20px;
+        }
+
+        .bar {
+            background: var(--accent6);
+            flex: 1;
+            transition: height 1s;
+            position: relative;
+        }
+
+        .bar::after {
+            content: attr(data-label);
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.7em;
+        }
+
         @media screen and (max-width: 736px) {
             .module-grid {
                 grid-template-columns: 1fr;
@@ -117,61 +148,35 @@
     <div id="main">
         <div class="inner">
             <a href="../index.html" class="back-link">← Quay lại trang chủ</a>
-            <h1>Project Hub</h1>
+            <h1>Data Operation Module</h1>
             <div class="meta">
                 <span class="badge"
                     style="background: var(--accent6); padding: 0.2em 0.6em; border-radius: 4px; font-weight: 600; font-size: 0.8em; margin-right: 1em;">Part
                     of FW Tools Ecosystem</span>
-                <span>Quản lý tập trung & Theo dõi trạng thái dự án Fieldwork</span>
+                <span>Xử lý data, lọc Batch & Điều phối mẫu chuyên nghiệp</span>
             </div>
 
             <div class="case-content">
                 <section>
                     <h2>Tổng quan giải pháp</h2>
-                    <p>Module Project Management là "trái tim" của hệ thống FW Tools, nơi mọi dự án khảo sát được khởi
-                        tạo và theo dõi. Thay vì quản lý bằng các danh sách Excel rời rạc, hệ thống này cung cấp một
-                        giao diện tập trung để kiểm soát toàn bộ vòng đời của dự án.</p>
+                    <p>Module Data Operation tập trung vào khâu tiền xử lý (Pre-processing) và phân phối mẫu khảo sát.
+                        Hệ thống cho phép lọc respondents dựa trên các tiêu chí phức tạp, đảm bảo mẫu được gửi đúng đối
+                        tượng mục tiêu, từ đó tối ưu CPI.</p>
                 </section>
 
                 <section>
-                    <h2>Report: Projects Health Dashboard</h2>
-                    <div
-                        style="background: rgba(255, 255, 255, 0.05); padding: 1.5em; border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.1);">
-                        <div
-                            style="display: flex; justify-content: space-between; margin-bottom: 1em; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.5em;">
-                            <span style="font-weight: 600;">Danh sách dự án đang chạy (Active)</span>
-                            <span style="color: #4caf50;">● 12 Projects Running</span>
+                    <h2>Report: Sampling Efficiency Analysis</h2>
+                    <div class="report-box">
+                        <p style="margin-bottom: 1em; font-weight: 600;">Phân bổ mẫu theo tiêu chí (Hợp lệ vs. Bị loại)
+                        </p>
+                        <div class="chart-sim">
+                            <div class="bar" style="height: 80%; background: #4caf50;" data-label="Valid (80%)"></div>
+                            <div class="bar" style="height: 15%; background: #f44336;" data-label="Quota Full (15%)">
+                            </div>
+                            <div class="bar" style="height: 5%; background: #ff9800;" data-label="Filtered (5%)"></div>
                         </div>
-                        <table style="width: 100%; border-collapse: collapse; font-size: 0.9em;">
-                            <thead>
-                                <tr style="text-align: left; border-bottom: 2px solid var(--accent6);">
-                                    <th style="padding: 0.5em;">Project Code</th>
-                                    <th style="padding: 0.5em;">Survey ID</th>
-                                    <th style="padding: 0.5em;">Client</th>
-                                    <th style="padding: 0.5em;">Health</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                                    <td style="padding: 0.5em;">VN2023_001</td>
-                                    <td style="padding: 0.5em;">#88123</td>
-                                    <td style="padding: 0.5em;">Nestle</td>
-                                    <td style="padding: 0.5em; color: #4caf50;">Good</td>
-                                </tr>
-                                <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                                    <td style="padding: 0.5em;">VN2023_002</td>
-                                    <td style="padding: 0.5em;">#88456</td>
-                                    <td style="padding: 0.5em;">PepsiCo</td>
-                                    <td style="padding: 0.5em; color: #ffeb3b;">Caution</td>
-                                </tr>
-                                <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                                    <td style="padding: 0.5em;">VN2023_003</td>
-                                    <td style="padding: 0.5em;">#88789</td>
-                                    <td style="padding: 0.5em;">Shopee</td>
-                                    <td style="padding: 0.5em; color: #4caf50;">Good</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <p style="margin-top: 1em; font-size: 0.8em; opacity: 0.7;">* Dữ liệu mô phỏng hiệu suất lọc mẫu
+                            cho dự án FMCG Tracking.</p>
                     </div>
                 </section>
 
@@ -179,14 +184,14 @@
                     <h2>Tính năng chính</h2>
                     <div class="module-grid">
                         <div class="module-item">
-                            <h3>Centralized Database</h3>
-                            <p>Lưu trữ toàn bộ thông tin Project Code, Survey Link và tài liệu liên quan tại một nơi duy
-                                nhất.</p>
+                            <h3>Smart Filtering</h3>
+                            <p>Lọc respondents đa tiêu chí: Địa lý (63 tỉnh thành), Độ tuổi, Thu nhập (SEC), và Thói
+                                quen tiêu dùng.</p>
                         </div>
                         <div class="module-item">
-                            <h3>Status Tracking</h3>
-                            <p>Tự động cập nhật trạng thái dự án (Open/Closed) dựa trên thông tin từ Survey Platform.
-                            </p>
+                            <h3>Batch Allocation</h3>
+                            <p>Tự động chia mẫu thành các Batch nhỏ để gửi test trước khi launch diện rộng, giúp kiểm
+                                soát chất lượng data.</p>
                         </div>
                     </div>
                 </section>
@@ -195,16 +200,16 @@
                     <h2>Giá trị mang lại</h2>
                     <div class="stats-summary">
                         <div>
-                            <span class="stat-val">100%</span>
-                            <span class="stat-label">Truy cập dữ liệu tức thì</span>
+                            <span class="stat-val">10-30%</span>
+                            <span class="stat-label">Giảm CPI dự án</span>
                         </div>
                         <div>
-                            <span class="stat-val">0</span>
-                            <span class="stat-label">Thất lạc thông tin khảo sát</span>
+                            <span class="stat-val">95%+</span>
+                            <span class="stat-label">Tỷ lệ mẫu khớp mục tiêu</span>
                         </div>
                         <div>
-                            <span class="stat-val">Secure</span>
-                            <span class="stat-label">Phân quyền quản trị</span>
+                            <span class="stat-val">Fast</span>
+                            <span class="stat-label">Tốc độ lọc & Chia mẫu</span>
                         </div>
                     </div>
                 </section>
